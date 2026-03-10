@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://yxshkm404.github.io/c-programming-notes/Basics/Input%20Output%20%28printf%2C%20scanf%29/">
       
       
-        <link rel="prev" href="../Data%20Types/">
+        <link rel="prev" href="../Program%20Structure/">
       
       
         <link rel="next" href="../Control%20Flow%20%28if-else%29/">
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#input-output-printf-scanf" class="md-skip">
+        <a href="#input-output-in-c" class="md-skip">
           Skip to content
         </a>
       
@@ -359,6 +359,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../Program%20Structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Program Structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -370,6 +398,24 @@
       
         
       
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Input & Output
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -387,6 +433,392 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📖 Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#printf-printing-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🖨️ printf() — Printing Output
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖨️ printf() — Printing Output">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#your-first-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your First Output
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printing-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Printing Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format-specifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏷️ Format Specifiers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏷️ Format Specifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#format-specifier-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format Specifier Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#width-precision-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔢 Width &amp; Precision Formatting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔢 Width &amp; Precision Formatting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#width-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Width Formatting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Precision Formatting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scanf-reading-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⌨️ scanf() — Reading Input
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⌨️ scanf() — Reading Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-syntax_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-different-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading Different Data Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-multiple-values-at-once" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading Multiple Values at Once
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escape-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔤 Escape Sequences
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔤 Escape Sequences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#escape-sequence-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escape Sequence Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-printf-scanf-work-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔄 How printf &amp; scanf Work Together
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 How printf &amp; scanf Work Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-student-report-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧮 Simple Student Report Card
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ Common Mistakes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ Common Mistakes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-missing-in-scanf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Missing &amp; in scanf
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-wrong-format-specifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Wrong format specifier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-missing-n-causing-messy-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Missing \n causing messy output
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-reading-char-after-int-with-scanf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Reading char after int with scanf
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#printf-vs-scanf-side-by-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🆚 printf vs scanf — Side by Side
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-io-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔁 Other I/O Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔁 Other I/O Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getchar-and-putchar-single-character-io" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getchar() and putchar() — Single Character I/O
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puts-print-a-string-with-auto-newline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        puts() — Print a String with Auto Newline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Quick Reference Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1476,6 +1908,381 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📖 Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#printf-printing-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🖨️ printf() — Printing Output
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖨️ printf() — Printing Output">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#your-first-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your First Output
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printing-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Printing Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format-specifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏷️ Format Specifiers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏷️ Format Specifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#format-specifier-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format Specifier Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#width-precision-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔢 Width &amp; Precision Formatting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔢 Width &amp; Precision Formatting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#width-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Width Formatting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Precision Formatting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scanf-reading-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⌨️ scanf() — Reading Input
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⌨️ scanf() — Reading Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-syntax_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-different-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading Different Data Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-multiple-values-at-once" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading Multiple Values at Once
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escape-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔤 Escape Sequences
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔤 Escape Sequences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#escape-sequence-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escape Sequence Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-printf-scanf-work-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔄 How printf &amp; scanf Work Together
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 How printf &amp; scanf Work Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-student-report-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧮 Simple Student Report Card
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ Common Mistakes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ Common Mistakes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-missing-in-scanf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Missing &amp; in scanf
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-wrong-format-specifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Wrong format specifier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-missing-n-causing-messy-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Missing \n causing messy output
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-reading-char-after-int-with-scanf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Reading char after int with scanf
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#printf-vs-scanf-side-by-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🆚 printf vs scanf — Side by Side
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-io-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔁 Other I/O Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔁 Other I/O Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getchar-and-putchar-single-character-io" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getchar() and putchar() — Single Character I/O
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puts-print-a-string-with-auto-newline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        puts() — Print a String with Auto Newline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Quick Reference Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1494,7 +2301,515 @@
   
 
 
-<h1 id="input-output-printf-scanf">Input Output (printf, scanf)<a class="headerlink" href="#input-output-printf-scanf" title="Permanent link">&para;</a></h1>
+<h1 id="input-output-in-c">Input &amp; Output in C 🖥️<a class="headerlink" href="#input-output-in-c" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">What You'll Learn</p>
+<ul>
+<li>✅ How <code>printf()</code> works — displaying output</li>
+<li>✅ How <code>scanf()</code> works — reading user input</li>
+<li>✅ Format specifiers and their uses</li>
+<li>✅ Special characters (escape sequences)</li>
+<li>✅ Common mistakes and how to avoid them</li>
+</ul>
+</div>
+<hr />
+<h2 id="introduction">📖 Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>Every program needs two things — <strong>input</strong> (data coming in) and <strong>output</strong> (data going out). In C, we use:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Purpose</th>
+<th>Header File</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>printf()</code></td>
+<td>Print output to the screen</td>
+<td><code>stdio.h</code></td>
+</tr>
+<tr>
+<td><code>scanf()</code></td>
+<td>Read input from the keyboard</td>
+<td><code>stdio.h</code></td>
+</tr>
+</tbody>
+</table>
+<p>To use these functions, always include this at the top of your program:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">What does stdio.h mean?</p>
+<p><strong>stdio</strong> stands for <strong>St</strong>an<strong>d</strong>ard <strong>I</strong>nput/<strong>O</strong>utput. It's a built-in C library that gives you access to <code>printf</code>, <code>scanf</code>, and many other I/O functions.</p>
+</div>
+<hr />
+<h2 id="printf-printing-output">🖨️ printf() — Printing Output<a class="headerlink" href="#printf-printing-output" title="Permanent link">&para;</a></h2>
+<p><code>printf()</code> is used to <strong>display text, numbers, and variables</strong> on the screen.</p>
+<h3 id="basic-syntax">Basic Syntax<a class="headerlink" href="#basic-syntax" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;format string&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">variable1</span><span class="p">,</span><span class="w"> </span><span class="n">variable2</span><span class="p">,</span><span class="w"> </span><span class="p">...);</span>
+</code></pre></div>
+<h3 id="your-first-output">Your First Output<a class="headerlink" href="#your-first-output" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello, World!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Output:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Hello, World!
+</code></pre></div></p>
+<hr />
+<h3 id="printing-variables">Printing Variables<a class="headerlink" href="#printing-variables" title="Permanent link">&para;</a></h3>
+<p>You can print variables using <strong>format specifiers</strong> — special placeholders that tell <code>printf</code> what type of value to print.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">height</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mf">5.9</span><span class="p">;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">grade</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;A&#39;</span><span class="p">;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">name</span><span class="p">[]</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Yashkm&quot;</span><span class="p">;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Name:   %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Age:    %d years</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">);</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Height: %.1f ft</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">);</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Grade:  %c</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">grade</span><span class="p">);</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Output:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Name:   Yashkm
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Age:    20 years
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Height: 5.9 ft
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>Grade:  A
+</code></pre></div></p>
+<hr />
+<h2 id="format-specifiers">🏷️ Format Specifiers<a class="headerlink" href="#format-specifiers" title="Permanent link">&para;</a></h2>
+<p>Format specifiers tell <code>printf</code> and <code>scanf</code> <strong>what type of data</strong> to handle.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>     ┌─────────────────────────────────────────────┐
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>     │           FORMAT SPECIFIER CHART            │
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>     ├──────────┬──────────────┬───────────────────┤
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>     │ Spec     │ Data Type    │ Example           │
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>     ├──────────┼──────────────┼───────────────────┤
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>     │  %d      │ int          │ 42                │
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>     │  %i      │ int          │ 42                │
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>     │  %f      │ float        │ 3.140000          │
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>     │  %.2f    │ float        │ 3.14              │
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>     │  %lf     │ double       │ 3.141592653589    │
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>     │  %c      │ char         │ A                 │
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>     │  %s      │ string       │ Hello             │
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>     │  %ld     │ long int     │ 1234567890        │
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>     │  %u      │ unsigned int │ 4294967295        │
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>     │  %o      │ octal        │ 52 (= 42 in dec)  │
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>     │  %x      │ hexadecimal  │ 2a (= 42 in dec)  │
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>     │  %e      │ scientific   │ 3.14e+00          │
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>     │  %p      │ pointer addr │ 0x7fff5fbff5ac    │
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>     │  %%      │ literal %    │ 100%              │
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>     └──────────┴──────────────┴───────────────────┘
+</code></pre></div>
+<h3 id="format-specifier-examples">Format Specifier Examples<a class="headerlink" href="#format-specifier-examples" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Decimal:     %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w">  </span><span class="n">num</span><span class="p">);</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Octal:       %o</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w">  </span><span class="n">num</span><span class="p">);</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hexadecimal: %x</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w">  </span><span class="n">num</span><span class="p">);</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Uppercase:   %X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w">  </span><span class="n">num</span><span class="p">);</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">pi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.14159</span><span class="p">;</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Default float:    %f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w">   </span><span class="n">pi</span><span class="p">);</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;2 decimal places: %.2f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w">  </span><span class="n">pi</span><span class="p">);</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Scientific:       %e</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w">    </span><span class="n">pi</span><span class="p">);</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Literal percent: 100%%</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Output:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Decimal:     42
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>Octal:       52
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>Hexadecimal: 2a
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>Uppercase:   2A
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>Default float:    3.141590
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>2 decimal places: 3.14
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>Scientific:       3.141590e+00
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>Literal percent: 100%
+</code></pre></div></p>
+<hr />
+<h2 id="width-precision-formatting">🔢 Width &amp; Precision Formatting<a class="headerlink" href="#width-precision-formatting" title="Permanent link">&para;</a></h2>
+<p>You can control <strong>how wide</strong> the output is and <strong>how many decimal places</strong> to show.</p>
+<h3 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>%[flags][width][.precision]specifier
+</code></pre></div>
+<h3 id="width-formatting">Width Formatting<a class="headerlink" href="#width-formatting" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">    </span><span class="c1">// Right-aligned (default)</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%10d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w">  </span><span class="mi">42</span><span class="p">);</span><span class="w">    </span><span class="c1">//         42</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%10s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w">  </span><span class="s">&quot;Hi&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">//         Hi</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">    </span><span class="c1">// Left-aligned (use - flag)</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%-10d|</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p">);</span><span class="w">   </span><span class="c1">// 42        |</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%-10s|</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Hi&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Hi        |</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="w">    </span><span class="c1">// Zero padding</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%010d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p">);</span><span class="w">    </span><span class="c1">// 0000000042</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Output:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>        42
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>        Hi
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>42        |
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>Hi        |
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>0000000042
+</code></pre></div></p>
+<h3 id="precision-formatting">Precision Formatting<a class="headerlink" href="#precision-formatting" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">price</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">99.9999</span><span class="p">;</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%.0f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">price</span><span class="p">);</span><span class="w">   </span><span class="c1">// 100</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%.1f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">price</span><span class="p">);</span><span class="w">   </span><span class="c1">// 100.0</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%.2f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">price</span><span class="p">);</span><span class="w">   </span><span class="c1">// 100.00</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%.4f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">price</span><span class="p">);</span><span class="w">   </span><span class="c1">// 99.9999</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="scanf-reading-input">⌨️ scanf() — Reading Input<a class="headerlink" href="#scanf-reading-input" title="Permanent link">&para;</a></h2>
+<p><code>scanf()</code> reads <strong>input from the keyboard</strong> and stores it in variables.</p>
+<h3 id="basic-syntax_1">Basic Syntax<a class="headerlink" href="#basic-syntax_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;format string&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">variable1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">variable2</span><span class="p">,</span><span class="w"> </span><span class="p">...);</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Don't forget the <code>&amp;</code> (ampersand)!</p>
+<p>The <code>&amp;</code> gives <code>scanf</code> the <strong>memory address</strong> of the variable so it can store the value there. Forgetting <code>&amp;</code> is one of the most common beginner mistakes!
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">);</span><span class="w">   </span><span class="c1">// ❌ WRONG — missing &amp;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">age</span><span class="p">);</span><span class="w">  </span><span class="c1">// ✅ CORRECT</span>
+</code></pre></div></p>
+</div>
+<h3 id="reading-different-data-types">Reading Different Data Types<a class="headerlink" href="#reading-different-data-types" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">    </span><span class="kt">int</span><span class="w">    </span><span class="n">age</span><span class="p">;</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">    </span><span class="kt">float</span><span class="w">  </span><span class="n">height</span><span class="p">;</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">    </span><span class="kt">char</span><span class="w">   </span><span class="n">grade</span><span class="p">;</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">    </span><span class="kt">char</span><span class="w">   </span><span class="n">name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter your name: &quot;</span><span class="p">);</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%s&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span><span class="w">           </span><span class="c1">// No &amp; needed for strings/arrays</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter your age: &quot;</span><span class="p">);</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">age</span><span class="p">);</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter your height (ft): &quot;</span><span class="p">);</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%f&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">height</span><span class="p">);</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter your grade: &quot;</span><span class="p">);</span>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot; %c&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">grade</span><span class="p">);</span><span class="w">        </span><span class="c1">// Note the space before %c</span>
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">--- Your Details ---</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Name:   %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w">   </span><span class="n">name</span><span class="p">);</span>
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Age:    %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w">   </span><span class="n">age</span><span class="p">);</span>
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Height: %.1f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">);</span>
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Grade:  %c</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w">   </span><span class="n">grade</span><span class="p">);</span>
+<a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>
+<a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Sample Run:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Enter your name: Yashkm
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>Enter your age: 20
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>Enter your height (ft): 5.9
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>Enter your grade: A
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>--- Your Details ---
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>Name:   Yashkm
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>Age:    20
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>Height: 5.9
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>Grade:  A
+</code></pre></div></p>
+<hr />
+<h3 id="reading-multiple-values-at-once">Reading Multiple Values at Once<a class="headerlink" href="#reading-multiple-values-at-once" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter two numbers (e.g. 10 20): &quot;</span><span class="p">);</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d %d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">y</span><span class="p">);</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;You entered: %d and %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">);</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Sum: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">);</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Sample Run:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Enter two numbers (e.g. 10 20): 10 20
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>You entered: 10 and 20
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>Sum: 30
+</code></pre></div></p>
+<hr />
+<h2 id="escape-sequences">🔤 Escape Sequences<a class="headerlink" href="#escape-sequences" title="Permanent link">&para;</a></h2>
+<p>Escape sequences are <strong>special characters</strong> that start with a backslash <code>\</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>     ┌──────────────────────────────────────────┐
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>     │         ESCAPE SEQUENCE TABLE            │
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>     ├─────────┬────────────────────────────────┤
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>     │  Code   │ Meaning                        │
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>     ├─────────┼────────────────────────────────┤
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>     │  \n     │ New line (Enter key)            │
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>     │  \t     │ Horizontal tab (4-8 spaces)     │
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>     │  \r     │ Carriage return                 │
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>     │  \\     │ Backslash ( \ )                 │
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>     │  \&quot;     │ Double quote ( &quot; )              │
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>     │  \&#39;     │ Single quote ( &#39; )              │
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>     │  \0     │ Null character (end of string)  │
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>     │  \a     │ Alert / beep sound              │
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>     │  \b     │ Backspace                       │
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>     └─────────┴────────────────────────────────┘
+</code></pre></div>
+<h3 id="escape-sequence-examples">Escape Sequence Examples<a class="headerlink" href="#escape-sequence-examples" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Line 1</span><span class="se">\n</span><span class="s">Line 2</span><span class="se">\n</span><span class="s">Line 3</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Tabbed:</span><span class="se">\t</span><span class="s">Column1</span><span class="se">\t</span><span class="s">Column2</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;She said </span><span class="se">\&quot;</span><span class="s">Hello!</span><span class="se">\&quot;\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Path: C:</span><span class="se">\\</span><span class="s">Users</span><span class="se">\\</span><span class="s">Yashkm</span><span class="se">\\\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;100%% Complete</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Output:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>Line 1
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>Line 2
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>Line 3
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>Tabbed: Column1 Column2
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>She said &quot;Hello!&quot;
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>Path: C:\Users\Yashkm\
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>100% Complete
+</code></pre></div></p>
+<hr />
+<h2 id="how-printf-scanf-work-together">🔄 How printf &amp; scanf Work Together<a class="headerlink" href="#how-printf-scanf-work-together" title="Permanent link">&para;</a></h2>
+<p>Here's a complete, practical example combining everything:</p>
+<h3 id="simple-student-report-card">🧮 Simple Student Report Card<a class="headerlink" href="#simple-student-report-card" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">name</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="w">    </span><span class="kt">int</span><span class="w">  </span><span class="n">math</span><span class="p">,</span><span class="w"> </span><span class="n">science</span><span class="p">,</span><span class="w"> </span><span class="n">english</span><span class="p">;</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">average</span><span class="p">;</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="w">    </span><span class="c1">// ── Input ──────────────────────────────────</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;╔══════════════════════════════╗</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;║     STUDENT REPORT CARD      ║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;╚══════════════════════════════╝</span><span class="se">\n\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter student name:       &quot;</span><span class="p">);</span>
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%s&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a>
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter Math marks (0-100): &quot;</span><span class="p">);</span>
+<a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">math</span><span class="p">);</span>
+<a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a>
+<a id="__codelineno-22-19" name="__codelineno-22-19" href="#__codelineno-22-19"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter Science marks:      &quot;</span><span class="p">);</span>
+<a id="__codelineno-22-20" name="__codelineno-22-20" href="#__codelineno-22-20"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">science</span><span class="p">);</span>
+<a id="__codelineno-22-21" name="__codelineno-22-21" href="#__codelineno-22-21"></a>
+<a id="__codelineno-22-22" name="__codelineno-22-22" href="#__codelineno-22-22"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter English marks:      &quot;</span><span class="p">);</span>
+<a id="__codelineno-22-23" name="__codelineno-22-23" href="#__codelineno-22-23"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">english</span><span class="p">);</span>
+<a id="__codelineno-22-24" name="__codelineno-22-24" href="#__codelineno-22-24"></a>
+<a id="__codelineno-22-25" name="__codelineno-22-25" href="#__codelineno-22-25"></a><span class="w">    </span><span class="c1">// ── Processing ─────────────────────────────</span>
+<a id="__codelineno-22-26" name="__codelineno-22-26" href="#__codelineno-22-26"></a><span class="w">    </span><span class="n">average</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">math</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">science</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">english</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">3.0</span><span class="p">;</span>
+<a id="__codelineno-22-27" name="__codelineno-22-27" href="#__codelineno-22-27"></a>
+<a id="__codelineno-22-28" name="__codelineno-22-28" href="#__codelineno-22-28"></a><span class="w">    </span><span class="c1">// ── Output ─────────────────────────────────</span>
+<a id="__codelineno-22-29" name="__codelineno-22-29" href="#__codelineno-22-29"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">╔══════════════════════════════╗</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-22-30" name="__codelineno-22-30" href="#__codelineno-22-30"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;║         RESULTS              ║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-22-31" name="__codelineno-22-31" href="#__codelineno-22-31"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;╠══════════════════════════════╣</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-22-32" name="__codelineno-22-32" href="#__codelineno-22-32"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;║ Name:    %-20s║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
+<a id="__codelineno-22-33" name="__codelineno-22-33" href="#__codelineno-22-33"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;║ Math:    %-20d║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">math</span><span class="p">);</span>
+<a id="__codelineno-22-34" name="__codelineno-22-34" href="#__codelineno-22-34"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;║ Science: %-20d║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">science</span><span class="p">);</span>
+<a id="__codelineno-22-35" name="__codelineno-22-35" href="#__codelineno-22-35"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;║ English: %-20d║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">english</span><span class="p">);</span>
+<a id="__codelineno-22-36" name="__codelineno-22-36" href="#__codelineno-22-36"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;╠══════════════════════════════╣</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-22-37" name="__codelineno-22-37" href="#__codelineno-22-37"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;║ Average: %-20.2f║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">average</span><span class="p">);</span>
+<a id="__codelineno-22-38" name="__codelineno-22-38" href="#__codelineno-22-38"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;║ Grade:   &quot;</span><span class="p">);</span>
+<a id="__codelineno-22-39" name="__codelineno-22-39" href="#__codelineno-22-39"></a>
+<a id="__codelineno-22-40" name="__codelineno-22-40" href="#__codelineno-22-40"></a><span class="w">    </span><span class="k">if</span><span class="w">      </span><span class="p">(</span><span class="n">average</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">90</span><span class="p">)</span><span class="w"> </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;A+ (Excellent!)      ║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-22-41" name="__codelineno-22-41" href="#__codelineno-22-41"></a><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">average</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">80</span><span class="p">)</span><span class="w"> </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;A  (Very Good)       ║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-22-42" name="__codelineno-22-42" href="#__codelineno-22-42"></a><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">average</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">70</span><span class="p">)</span><span class="w"> </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;B  (Good)            ║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-22-43" name="__codelineno-22-43" href="#__codelineno-22-43"></a><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">average</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">60</span><span class="p">)</span><span class="w"> </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;C  (Average)         ║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-22-44" name="__codelineno-22-44" href="#__codelineno-22-44"></a><span class="w">    </span><span class="k">else</span><span class="w">                    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;F  (Fail)            ║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-22-45" name="__codelineno-22-45" href="#__codelineno-22-45"></a>
+<a id="__codelineno-22-46" name="__codelineno-22-46" href="#__codelineno-22-46"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;╚══════════════════════════════╝</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-22-47" name="__codelineno-22-47" href="#__codelineno-22-47"></a>
+<a id="__codelineno-22-48" name="__codelineno-22-48" href="#__codelineno-22-48"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-22-49" name="__codelineno-22-49" href="#__codelineno-22-49"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Sample Run:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>╔══════════════════════════════╗
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>║     STUDENT REPORT CARD      ║
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>╚══════════════════════════════╝
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>Enter student name:       Yashkm
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>Enter Math marks (0-100): 88
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>Enter Science marks:      92
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>Enter English marks:      85
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>╔══════════════════════════════╗
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>║         RESULTS              ║
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>╠══════════════════════════════╣
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>║ Name:    Yashkm             ║
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>║ Math:    88                 ║
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a>║ Science: 92                 ║
+<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a>║ English: 85                 ║
+<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a>╠══════════════════════════════╣
+<a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a>║ Average: 88.33              ║
+<a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a>║ Grade:   A  (Very Good)     ║
+<a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a>╚══════════════════════════════╝
+</code></pre></div></p>
+<hr />
+<h2 id="common-mistakes">⚠️ Common Mistakes<a class="headerlink" href="#common-mistakes" title="Permanent link">&para;</a></h2>
+<h3 id="1-missing-in-scanf">1. Missing <code>&amp;</code> in scanf<a class="headerlink" href="#1-missing-in-scanf" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">);</span><span class="w">   </span><span class="c1">// ❌ WRONG — undefined behavior</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">age</span><span class="p">);</span><span class="w">  </span><span class="c1">// ✅ CORRECT</span>
+</code></pre></div>
+<h3 id="2-wrong-format-specifier">2. Wrong format specifier<a class="headerlink" href="#2-wrong-format-specifier" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="kt">float</span><span class="w"> </span><span class="n">price</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">9.99</span><span class="p">;</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">price</span><span class="p">);</span><span class="w">    </span><span class="c1">// ❌ WRONG — %d is for int</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">price</span><span class="p">);</span><span class="w">    </span><span class="c1">// ✅ CORRECT</span>
+</code></pre></div>
+<h3 id="3-missing-n-causing-messy-output">3. Missing <code>\n</code> causing messy output<a class="headerlink" href="#3-missing-n-causing-messy-output" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter name: &quot;</span><span class="p">);</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter age: &quot;</span><span class="p">);</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="c1">// Output: Enter name: Enter age:  ← all on one line!</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter name:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter age:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="c1">// Output: Each on its own line ✅</span>
+</code></pre></div>
+<h3 id="4-reading-char-after-int-with-scanf">4. Reading char after int with scanf<a class="headerlink" href="#4-reading-char-after-int-with-scanf" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="kt">char</span><span class="w"> </span><span class="n">grade</span><span class="p">;</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">age</span><span class="p">);</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%c&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">grade</span><span class="p">);</span><span class="w">   </span><span class="c1">// ❌ Reads leftover newline &#39;\n&#39;</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="n">scanf</span><span class="p">(</span><span class="s">&quot; %c&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">grade</span><span class="p">);</span><span class="w">  </span><span class="c1">// ✅ Space before %c skips whitespace</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Why the space before <code>%c</code>?</p>
+<p>When you press Enter after typing a number, <code>scanf</code> leaves a <code>\n</code> in the input buffer. The space before <code>%c</code> tells <code>scanf</code> to <strong>skip any whitespace</strong> (including that leftover newline) before reading the character.</p>
+</div>
+<hr />
+<h2 id="printf-vs-scanf-side-by-side">🆚 printf vs scanf — Side by Side<a class="headerlink" href="#printf-vs-scanf-side-by-side" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>  ┌─────────────────────────────────────────────────────┐
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>  │              printf vs scanf                        │
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>  ├───────────────────────┬─────────────────────────────┤
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>  │      printf()         │         scanf()             │
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>  ├───────────────────────┼─────────────────────────────┤
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>  │ Sends data OUT        │ Reads data IN               │
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>  │ to the screen         │ from the keyboard           │
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>  │                       │                             │
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>  │ printf(&quot;%d&quot;, num);    │ scanf(&quot;%d&quot;, &amp;num);          │
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a>  │                       │                             │
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a>  │ No &amp; needed           │ &amp; required (except strings) │
+<a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>  │                       │                             │
+<a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a>  │ Returns number of     │ Returns number of items     │
+<a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a>  │ characters printed    │ successfully read           │
+<a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a>  └───────────────────────┴─────────────────────────────┘
+</code></pre></div>
+<hr />
+<h2 id="other-io-functions">🔁 Other I/O Functions<a class="headerlink" href="#other-io-functions" title="Permanent link">&para;</a></h2>
+<p>Besides <code>printf</code> and <code>scanf</code>, C has simpler I/O functions:</p>
+<h3 id="getchar-and-putchar-single-character-io">getchar() and putchar() — Single Character I/O<a class="headerlink" href="#getchar-and-putchar-single-character-io" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">ch</span><span class="p">;</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Type a character: &quot;</span><span class="p">);</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="w">    </span><span class="n">ch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getchar</span><span class="p">();</span><span class="w">           </span><span class="c1">// Read single character</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;You typed: &quot;</span><span class="p">);</span>
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a><span class="w">    </span><span class="n">putchar</span><span class="p">(</span><span class="n">ch</span><span class="p">);</span><span class="w">              </span><span class="c1">// Print single character</span>
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a><span class="w">    </span><span class="n">putchar</span><span class="p">(</span><span class="sc">&#39;\n&#39;</span><span class="p">);</span>
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="puts-print-a-string-with-auto-newline">puts() — Print a String with Auto Newline<a class="headerlink" href="#puts-print-a-string-with-auto-newline" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">message</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, C Programming!&quot;</span><span class="p">;</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="w">    </span><span class="n">puts</span><span class="p">(</span><span class="n">message</span><span class="p">);</span><span class="w">  </span><span class="c1">// Automatically adds \n at the end</span>
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="quick-reference-summary">✅ Quick Reference Summary<a class="headerlink" href="#quick-reference-summary" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Use</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>printf()</code></td>
+<td>Print to screen</td>
+<td><code>printf("Hello %d", 5);</code></td>
+</tr>
+<tr>
+<td><code>scanf()</code></td>
+<td>Read from keyboard</td>
+<td><code>scanf("%d", &amp;num);</code></td>
+</tr>
+<tr>
+<td><code>getchar()</code></td>
+<td>Read one character</td>
+<td><code>char c = getchar();</code></td>
+</tr>
+<tr>
+<td><code>putchar()</code></td>
+<td>Print one character</td>
+<td><code>putchar('A');</code></td>
+</tr>
+<tr>
+<td><code>puts()</code></td>
+<td>Print string + newline</td>
+<td><code>puts("Hello");</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition success">
+<p class="admonition-title">You're Ready!</p>
+<p>Now you know how to take input and display output in C. These two functions — <code>printf</code> and <code>scanf</code> — are the foundation of almost every C program you'll ever write. Practice them well! 💪</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Next Topic</p>
+<p>Now that you can handle I/O, learn how to make decisions in your programs → <strong><a href="../Control%20Flow%20%28if-else%29/">Control Flow</a></strong></p>
+</div>
 
 
 
