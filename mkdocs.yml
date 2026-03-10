@@ -26,6 +26,7 @@ nav:
   - Home: index.md
   - Basics:
       - Data Types: Basics/Data Types.md
+      - Program Structure: Basics/Program Structure.md
       - Input & Output: Basics/Input Output (printf, scanf).md
       - Control Flow: Basics/Control Flow (if-else).md
       - Loops: Basics/Loops.md
