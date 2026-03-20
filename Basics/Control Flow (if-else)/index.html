@@ -550,43 +550,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comparison-logical-operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔣 Comparison &amp; Logical Operators
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-switch-statement" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔀 The switch Statement
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ternary-operator" class="md-nav__link">
     <span class="md-ellipsis">
       
         ⚡ Ternary Operator (? :)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#full-practical-example-atm-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🧠 Full Practical Example — ATM System
       
     </span>
   </a>
@@ -1819,43 +1786,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comparison-logical-operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔣 Comparison &amp; Logical Operators
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-switch-statement" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔀 The switch Statement
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ternary-operator" class="md-nav__link">
     <span class="md-ellipsis">
       
         ⚡ Ternary Operator (? :)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#full-practical-example-atm-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🧠 Full Practical Example — ATM System
       
     </span>
   </a>
@@ -1966,26 +1900,15 @@
 
 
 <h1 id="control-flow-in-c">Control Flow in C 🔀<a class="headerlink" href="#control-flow-in-c" title="Permanent link">&para;</a></h1>
-<div class="admonition abstract">
-<p class="admonition-title">What You'll Learn</p>
-<ul>
-<li>✅ What control flow is and why it matters</li>
-<li>✅ <code>if</code>, <code>if-else</code>, and <code>else-if</code> ladder</li>
-<li>✅ Nested <code>if</code> statements</li>
-<li>✅ Comparison and logical operators</li>
-<li>✅ <code>switch</code> statement with fall-through</li>
-<li>✅ Ternary operator (<code>? :</code>)</li>
-<li>✅ Common mistakes to avoid</li>
-</ul>
-</div>
+<p>!!! abstract "What You'll Learn" - ✅ What control flow is and why it matters - ✅ <code>if</code>, <code>if-else</code>, and <code>else-if</code> ladder - ✅ Nested <code>if</code> statements - ✅ Comparison and logical operators - ✅ <code>switch</code> statement with fall-through - ✅ Ternary operator (<code>? :</code>) - ✅ Common mistakes to avoid</p>
 <hr />
 <h2 id="introduction">📖 Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>By default, C executes code <strong>line by line from top to bottom</strong>. But real programs need to make <strong>decisions</strong> — do this if something is true, do that if it's false.</p>
 <p><strong>Control Flow</strong> is about controlling <strong>which path</strong> your program takes based on conditions.</p>
 <div class="admonition tip">
 <p class="admonition-title">Think of it this way</p>
-<p>Just like a GPS gives you different routes based on traffic — control flow gives your program different paths based on conditions! 🛣️</p>
 </div>
+<p>Just like a GPS gives you different routes based on traffic — control flow gives your program different paths based on conditions! 🛣️</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>graph TD
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    A[Control Flow in C] --&gt; B[Conditional Statements]
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    A --&gt; C[Switch Statement]
@@ -2042,22 +1965,15 @@
 <a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="p">}</span>
 </code></pre></div>
-<p><strong>Output:</strong>
+<p><strong>Output:</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>✅ You are eligible to vote!
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Program continues...
-</code></pre></div></p>
-<div class="admonition info">
-<p class="admonition-title">Real-Life Example</p>
-<ul>
-<li>Check if a number is positive</li>
-<li>Check if user is logged in</li>
-<li>Check if a file exists</li>
-</ul>
-</div>
+</code></pre></div>
+<p>!!! info "Real-Life Example" - Check if a number is positive - Check if user is logged in - Check if a file exists</p>
 <div class="admonition tip">
 <p class="admonition-title">What if age was 16?</p>
-<p>If <code>age = 16</code>, the condition <code>16 &gt;= 18</code> is <strong>FALSE</strong> — the <code>printf</code> inside <code>if</code> is completely skipped.</p>
 </div>
+<p>If <code>age = 16</code>, the condition <code>16 &gt;= 18</code> is <strong>FALSE</strong> — the <code>printf</code> inside <code>if</code> is completely skipped.</p>
 <hr />
 <h3 id="2-the-if-else-statement">2️⃣ The <code>if-else</code> Statement<a class="headerlink" href="#2-the-if-else-statement" title="Permanent link">&para;</a></h3>
 <p>Do <strong>one thing</strong> if true, <strong>another thing</strong> if false.</p>
@@ -2102,21 +2018,14 @@
 <a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="p">}</span>
 </code></pre></div>
-<p><strong>Output:</strong>
+<p><strong>Output:</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Enter your marks: 75
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>🎉 Congratulations! You PASSED!
-</code></pre></div></p>
+</code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Enter your marks: 35
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>😞 Sorry, you FAILED. Try again!
 </code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">Real-Life Example</p>
-<ul>
-<li>Login: correct password → welcome, wrong → denied</li>
-<li>Balance check: enough funds → proceed, not enough → decline</li>
-<li>Age check: adult → allow entry, minor → restrict</li>
-</ul>
-</div>
+<p>!!! info "Real-Life Example" - Login: correct password → welcome, wrong → denied - Balance check: enough funds → proceed, not enough → decline - Age check: adult → allow entry, minor → restrict</p>
 <hr />
 <h3 id="3-the-else-if-ladder">3️⃣ The <code>else-if</code> Ladder<a class="headerlink" href="#3-the-else-if-ladder" title="Permanent link">&para;</a></h3>
 <p>Check <strong>multiple conditions</strong> one by one — like a ladder.</p>
@@ -2176,15 +2085,15 @@
 <a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="p">}</span>
 </code></pre></div>
-<p><strong>Output:</strong>
+<p><strong>Output:</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Enter your marks: 95  →  🌟 Grade: A+ — Excellent!
 <a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>Enter your marks: 73  →  👍 Grade: B  — Good!
 <a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>Enter your marks: 42  →  😞 Grade: F  — Failed
-</code></pre></div></p>
+</code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Important Rule</p>
-<p>Once a condition is <strong>TRUE</strong>, C runs that block and <strong>skips all remaining</strong> <code>else if</code> and <code>else</code> blocks — even if they would also be true.</p>
 </div>
+<p>Once a condition is <strong>TRUE</strong>, C runs that block and <strong>skips all remaining</strong> <code>else if</code> and <code>else</code> blocks — even if they would also be true.</p>
 <hr />
 <h3 id="4-nested-if-statements">4️⃣ Nested <code>if</code> Statements<a class="headerlink" href="#4-nested-if-statements" title="Permanent link">&para;</a></h3>
 <p>An <code>if</code> statement <strong>inside</strong> another <code>if</code> statement.</p>
@@ -2226,11 +2135,11 @@
 <a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a><span class="p">}</span>
 </code></pre></div>
-<p><strong>Output:</strong>
+<p><strong>Output:</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Enter username: admin
 <a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>Enter password: 1234
 <a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>✅ Login successful! Welcome, Admin!
-</code></pre></div></p>
+</code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Enter username: admin
 <a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>Enter password: wrong
 <a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>❌ Wrong password!
@@ -2241,184 +2150,199 @@
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Don't Over-Nest!</p>
-<p>More than 3 levels of nesting makes code very hard to read. Use logical operators instead:
+</div>
+<p>More than 3 levels of nesting makes code very hard to read. Use logical operators instead:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1">// ❌ Hard to read</span>
 <a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
-<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="p">}</span>
 <a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="p">}</span>
 <a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>
-<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="c1">// ✅ Better — use &amp;&amp; operator</span>
-<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div></p>
-</div>
-<hr />
-<h2 id="comparison-logical-operators">🔣 Comparison &amp; Logical Operators<a class="headerlink" href="#comparison-logical-operators" title="Permanent link">&para;</a></h2>
-<p>Used inside conditions to compare values and combine conditions.</p>
-<p><strong>Comparison Operators</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>     ┌──────────┬──────────────────────────┬────────────────────┐
-<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>     │ Operator │ Meaning                  │ Example            │
-<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>     ├──────────┼──────────────────────────┼────────────────────┤
-<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>     │   ==     │ Equal to                 │ a == b             │
-<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>     │   !=     │ Not equal to             │ a != b             │
-<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>     │   &gt;      │ Greater than             │ a &gt; b              │
-<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>     │   &lt;      │ Less than                │ a &lt; b              │
-<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>     │   &gt;=     │ Greater than or equal to │ a &gt;= b             │
-<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>     │   &lt;=     │ Less than or equal to    │ a &lt;= b             │
-<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a>     └──────────┴──────────────────────────┴────────────────────┘
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">    </span><span class="c1">// ✅ Better — use &amp;&amp; operator</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="w">    </span><span class="err">```</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="o">---</span>
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="cp">## 🔣 Comparison &amp; Logical Operators</span>
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>
+<a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a><span class="n">Used</span><span class="w"> </span><span class="n">inside</span><span class="w"> </span><span class="n">conditions</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">compare</span><span class="w"> </span><span class="n">values</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">combine</span><span class="w"> </span><span class="n">conditions</span><span class="p">.</span>
+<a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>
+<a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a><span class="o">**</span><span class="n">Comparison</span><span class="w"> </span><span class="n">Operators</span><span class="o">**</span>
 </code></pre></div>
-<p><strong>Logical Operators</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>     ┌──────────┬──────────────────────────┬──────────────────────────┐
-<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>     │ Operator │ Meaning                  │ Example                  │
-<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>     ├──────────┼──────────────────────────┼──────────────────────────┤
-<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>     │   &amp;&amp;     │ AND — both must be true  │ age &gt; 18 &amp;&amp; hasID == 1   │
-<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>     │   ||     │ OR  — one must be true   │ isAdmin || isMod         │
-<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>     │   !      │ NOT — reverses result    │ !isLoggedIn              │
-<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>     └──────────┴──────────────────────────┴──────────────────────────┘
+<div class="highlight"><pre><span></span><code> ┌──────────┬──────────────────────────┬────────────────────┐
+ │ Operator │ Meaning                  │ Example            │
+ ├──────────┼──────────────────────────┼────────────────────┤
+ │   ==     │ Equal to                 │ a == b             │
+ │   !=     │ Not equal to             │ a != b             │
+ │   &gt;      │ Greater than             │ a &gt; b              │
+ │   &lt;      │ Less than                │ a &lt; b              │
+ │   &gt;=     │ Greater than or equal to │ a &gt;= b             │
+ │   &lt;=     │ Less than or equal to    │ a &lt;= b             │
+ └──────────┴──────────────────────────┴────────────────────┘
 </code></pre></div>
-<p><strong>Operators in Action</strong></p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">&amp;&amp; (AND)</label><label for="__tabbed_1_2">|| (OR)</label><label for="__tabbed_1_3">! (NOT)</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
-<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">hasID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
-<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">age</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">18</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">hasID</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;✅ Entry allowed!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>**Logical Operators**
 </code></pre></div>
-<strong>Output:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>✅ Entry allowed!
+<div class="highlight"><pre><span></span><code> ┌──────────┬──────────────────────────┬──────────────────────────┐
+ │ Operator │ Meaning                  │ Example                  │
+ ├──────────┼──────────────────────────┼──────────────────────────┤
+ │   &amp;&amp;     │ AND — both must be true  │ age &gt; 18 &amp;&amp; hasID == 1   │
+ │   ||     │ OR  — one must be true   │ isAdmin || isMod         │
+ │   !      │ NOT — reverses result    │ !isLoggedIn              │
+ └──────────┴──────────────────────────┴──────────────────────────┘
 </code></pre></div>
-Both conditions must be TRUE.</p>
-</div>
-<div class="tabbed-block">
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">isWeekend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">isHoliday</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>
-<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isWeekend</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">isHoliday</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;🎉 Day off!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="p">}</span>
-</code></pre></div>
-<strong>Output:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>🎉 Day off!
-</code></pre></div>
-At least one condition must be TRUE.</p>
-</div>
-<div class="tabbed-block">
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">isRaining</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>
-<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">isRaining</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;☀️ Go outside!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="p">}</span>
-</code></pre></div>
-<strong>Output:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>☀️ Go outside!
-</code></pre></div>
-Reverses the condition — <code>!0</code> becomes TRUE.</p>
-</div>
-</div>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Common Mistake — <code>=</code> vs <code>==</code></p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
-<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>
-<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span><span class="w">   </span><span class="c1">// ❌ WRONG — ASSIGNS 10 to x (always true!)</span>
-<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span><span class="w">  </span><span class="c1">// ✅ CORRECT — COMPARES x with 10</span>
-</code></pre></div>
-This is one of the most common bugs in C. Always use <code>==</code> for comparison!</p>
-</div>
-<hr />
-<h2 id="the-switch-statement">🔀 The <code>switch</code> Statement<a class="headerlink" href="#the-switch-statement" title="Permanent link">&para;</a></h2>
-<p>A cleaner way to handle <strong>multiple fixed values</strong> of a single variable.</p>
-<p><strong>Syntax</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">variable</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">value1</span><span class="p">:</span>
-<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="w">        </span><span class="c1">// code for value1</span>
-<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">value2</span><span class="p">:</span>
-<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="w">        </span><span class="c1">// code for value2</span>
-<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a><span class="w">    </span><span class="k">default</span><span class="o">:</span>
-<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a><span class="w">        </span><span class="c1">// runs if no case matches</span>
-<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>**Operators in Action**
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>=== &quot;&amp;&amp; (AND)&quot;
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>```c
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>int age = 20;
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>int hasID = 1;
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>    if (age &gt;= 18 &amp;&amp; hasID == 1) {
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>        printf(&quot;✅ Entry allowed!\n&quot;);
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>    }
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>    ```
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>    **Output:**
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>    ```
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>    ✅ Entry allowed!
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>    ```
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>    Both conditions must be TRUE.
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>=== &quot;|| (OR)&quot;
+<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a>```c
+<a id="__codelineno-21-20" name="__codelineno-21-20" href="#__codelineno-21-20"></a>int isWeekend = 0;
+<a id="__codelineno-21-21" name="__codelineno-21-21" href="#__codelineno-21-21"></a>int isHoliday = 1;
+<a id="__codelineno-21-22" name="__codelineno-21-22" href="#__codelineno-21-22"></a>
+<a id="__codelineno-21-23" name="__codelineno-21-23" href="#__codelineno-21-23"></a>    if (isWeekend || isHoliday) {
+<a id="__codelineno-21-24" name="__codelineno-21-24" href="#__codelineno-21-24"></a>        printf(&quot;🎉 Day off!\n&quot;);
+<a id="__codelineno-21-25" name="__codelineno-21-25" href="#__codelineno-21-25"></a>    }
+<a id="__codelineno-21-26" name="__codelineno-21-26" href="#__codelineno-21-26"></a>    ```
+<a id="__codelineno-21-27" name="__codelineno-21-27" href="#__codelineno-21-27"></a>    **Output:**
+<a id="__codelineno-21-28" name="__codelineno-21-28" href="#__codelineno-21-28"></a>    ```
+<a id="__codelineno-21-29" name="__codelineno-21-29" href="#__codelineno-21-29"></a>    🎉 Day off!
+<a id="__codelineno-21-30" name="__codelineno-21-30" href="#__codelineno-21-30"></a>    ```
+<a id="__codelineno-21-31" name="__codelineno-21-31" href="#__codelineno-21-31"></a>    At least one condition must be TRUE.
+<a id="__codelineno-21-32" name="__codelineno-21-32" href="#__codelineno-21-32"></a>
+<a id="__codelineno-21-33" name="__codelineno-21-33" href="#__codelineno-21-33"></a>=== &quot;! (NOT)&quot;
+<a id="__codelineno-21-34" name="__codelineno-21-34" href="#__codelineno-21-34"></a>```c
+<a id="__codelineno-21-35" name="__codelineno-21-35" href="#__codelineno-21-35"></a>int isRaining = 0;
+<a id="__codelineno-21-36" name="__codelineno-21-36" href="#__codelineno-21-36"></a>
+<a id="__codelineno-21-37" name="__codelineno-21-37" href="#__codelineno-21-37"></a>    if (!isRaining) {
+<a id="__codelineno-21-38" name="__codelineno-21-38" href="#__codelineno-21-38"></a>        printf(&quot;☀️ Go outside!\n&quot;);
+<a id="__codelineno-21-39" name="__codelineno-21-39" href="#__codelineno-21-39"></a>    }
+<a id="__codelineno-21-40" name="__codelineno-21-40" href="#__codelineno-21-40"></a>    ```
+<a id="__codelineno-21-41" name="__codelineno-21-41" href="#__codelineno-21-41"></a>    **Output:**
+<a id="__codelineno-21-42" name="__codelineno-21-42" href="#__codelineno-21-42"></a>    ```
+<a id="__codelineno-21-43" name="__codelineno-21-43" href="#__codelineno-21-43"></a>    ☀️ Go outside!
+<a id="__codelineno-21-44" name="__codelineno-21-44" href="#__codelineno-21-44"></a>    ```
+<a id="__codelineno-21-45" name="__codelineno-21-45" href="#__codelineno-21-45"></a>    Reverses the condition — `!0` becomes TRUE.
+<a id="__codelineno-21-46" name="__codelineno-21-46" href="#__codelineno-21-46"></a>
+<a id="__codelineno-21-47" name="__codelineno-21-47" href="#__codelineno-21-47"></a>!!! warning &quot;Common Mistake — `=` vs `==`&quot;
+<a id="__codelineno-21-48" name="__codelineno-21-48" href="#__codelineno-21-48"></a>```c
+<a id="__codelineno-21-49" name="__codelineno-21-49" href="#__codelineno-21-49"></a>int x = 5;
+<a id="__codelineno-21-50" name="__codelineno-21-50" href="#__codelineno-21-50"></a>
+<a id="__codelineno-21-51" name="__codelineno-21-51" href="#__codelineno-21-51"></a>    if (x = 10) { ... }   // ❌ WRONG — ASSIGNS 10 to x (always true!)
+<a id="__codelineno-21-52" name="__codelineno-21-52" href="#__codelineno-21-52"></a>    if (x == 10) { ... }  // ✅ CORRECT — COMPARES x with 10
+<a id="__codelineno-21-53" name="__codelineno-21-53" href="#__codelineno-21-53"></a>    ```
+<a id="__codelineno-21-54" name="__codelineno-21-54" href="#__codelineno-21-54"></a>    This is one of the most common bugs in C. Always use `==` for comparison!
+<a id="__codelineno-21-55" name="__codelineno-21-55" href="#__codelineno-21-55"></a>
+<a id="__codelineno-21-56" name="__codelineno-21-56" href="#__codelineno-21-56"></a>---
+<a id="__codelineno-21-57" name="__codelineno-21-57" href="#__codelineno-21-57"></a>
+<a id="__codelineno-21-58" name="__codelineno-21-58" href="#__codelineno-21-58"></a>## 🔀 The `switch` Statement
+<a id="__codelineno-21-59" name="__codelineno-21-59" href="#__codelineno-21-59"></a>
+<a id="__codelineno-21-60" name="__codelineno-21-60" href="#__codelineno-21-60"></a>A cleaner way to handle **multiple fixed values** of a single variable.
+<a id="__codelineno-21-61" name="__codelineno-21-61" href="#__codelineno-21-61"></a>
+<a id="__codelineno-21-62" name="__codelineno-21-62" href="#__codelineno-21-62"></a>**Syntax**
+<a id="__codelineno-21-63" name="__codelineno-21-63" href="#__codelineno-21-63"></a>
+<a id="__codelineno-21-64" name="__codelineno-21-64" href="#__codelineno-21-64"></a>```c
+<a id="__codelineno-21-65" name="__codelineno-21-65" href="#__codelineno-21-65"></a>switch (variable) {
+<a id="__codelineno-21-66" name="__codelineno-21-66" href="#__codelineno-21-66"></a>    case value1:
+<a id="__codelineno-21-67" name="__codelineno-21-67" href="#__codelineno-21-67"></a>        // code for value1
+<a id="__codelineno-21-68" name="__codelineno-21-68" href="#__codelineno-21-68"></a>        break;
+<a id="__codelineno-21-69" name="__codelineno-21-69" href="#__codelineno-21-69"></a>    case value2:
+<a id="__codelineno-21-70" name="__codelineno-21-70" href="#__codelineno-21-70"></a>        // code for value2
+<a id="__codelineno-21-71" name="__codelineno-21-71" href="#__codelineno-21-71"></a>        break;
+<a id="__codelineno-21-72" name="__codelineno-21-72" href="#__codelineno-21-72"></a>    default:
+<a id="__codelineno-21-73" name="__codelineno-21-73" href="#__codelineno-21-73"></a>        // runs if no case matches
+<a id="__codelineno-21-74" name="__codelineno-21-74" href="#__codelineno-21-74"></a>}
 </code></pre></div>
 <p><strong>Memory Visualization</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>            switch(choice)
-<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>                  │
-<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>     ┌────────────┼─────────────┐──────────┐
-<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>     │            │             │          │
-<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>   case 1       case 2        case 3    default
-<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>     │            │             │          │
-<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>   break        break         break      break
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>            switch(choice)
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>                  │
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>     ┌────────────┼─────────────┐──────────┐
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>     │            │             │          │
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>   case 1       case 2        case 3    default
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>     │            │             │          │
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>   break        break         break      break
 </code></pre></div>
 <p><strong>Practical Example: Day of the Week</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>
-<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">day</span><span class="p">;</span>
-<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>
-<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter day number (1-7): &quot;</span><span class="p">);</span>
-<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">day</span><span class="p">);</span>
-<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>
-<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">day</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;📅 Monday</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">              </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;📅 Tuesday</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">             </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;📅 Wednesday</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">           </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">4</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;📅 Thursday</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">            </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">5</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;📅 Friday</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">              </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-31-15" name="__codelineno-31-15" href="#__codelineno-31-15"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">6</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;🎉 Saturday — Weekend!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-31-16" name="__codelineno-31-16" href="#__codelineno-31-16"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">7</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;🎉 Sunday — Weekend!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">   </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a><span class="w">        </span><span class="k">default</span><span class="o">:</span><span class="w"> </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Invalid! Enter 1-7</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-31-18" name="__codelineno-31-18" href="#__codelineno-31-18"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-31-19" name="__codelineno-31-19" href="#__codelineno-31-19"></a>
-<a id="__codelineno-31-20" name="__codelineno-31-20" href="#__codelineno-31-20"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-31-21" name="__codelineno-31-21" href="#__codelineno-31-21"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">day</span><span class="p">;</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter day number (1-7): &quot;</span><span class="p">);</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">day</span><span class="p">);</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">day</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;📅 Monday</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">              </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;📅 Tuesday</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">             </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;📅 Wednesday</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">           </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">4</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;📅 Thursday</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">            </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">5</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;📅 Friday</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">              </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">6</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;🎉 Saturday — Weekend!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">7</span><span class="p">:</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;🎉 Sunday — Weekend!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">   </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a><span class="w">        </span><span class="k">default</span><span class="o">:</span><span class="w"> </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Invalid! Enter 1-7</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a>
+<a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-23-21" name="__codelineno-23-21" href="#__codelineno-23-21"></a><span class="p">}</span>
 </code></pre></div>
-<p><strong>Output:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>Enter day number: 1  →  📅 Monday
-<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>Enter day number: 6  →  🎉 Saturday — Weekend!
-<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>Enter day number: 9  →  ❌ Invalid! Enter 1-7
-</code></pre></div></p>
+<p><strong>Output:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>Enter day number: 1  →  📅 Monday
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>Enter day number: 6  →  🎉 Saturday — Weekend!
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>Enter day number: 9  →  ❌ Invalid! Enter 1-7
+</code></pre></div>
 <p><strong>Fall-Through (Grouping Cases)</strong></p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">With break</label><label for="__tabbed_2_2">Without break (Fall-Through)</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">With break</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block">
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">day</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
-<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Monday</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span><span class="w">   </span><span class="c1">// stops here</span>
-<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
-<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Tuesday</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a><span class="p">}</span>
-</code></pre></div>
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p><code>c
+    switch (day) {
+        case 1:
+            printf("Monday\n");
+            break;   // stops here
+        case 2:
+            printf("Tuesday\n");
+            break;
+    }</code>
 Each case runs independently.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Without break (Fall-Through)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
 </div>
-<div class="tabbed-block">
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">day</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
-<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
-<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
-<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">4</span><span class="p">:</span>
-<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">5</span><span class="p">:</span>
-<a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;💼 Weekday!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">6</span><span class="p">:</span>
-<a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">7</span><span class="p">:</span>
-<a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;🎉 Weekend!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-34-13" name="__codelineno-34-13" href="#__codelineno-34-13"></a><span class="p">}</span>
-</code></pre></div>
+</div>
+<p><code>c
+    switch (day) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+            printf("💼 Weekday!\n");
+            break;
+        case 6:
+        case 7:
+            printf("🎉 Weekend!\n");
+            break;
+    }</code>
 <strong>Output:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>Enter day: 3  →  💼 Weekday!
-<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>Enter day: 7  →  🎉 Weekend!
-</code></pre></div>
+<code>Enter day: 3  →  💼 Weekday!
+    Enter day: 7  →  🎉 Weekend!</code>
 Cases 1-5 all fall through to the same output.</p>
-</div>
-</div>
-</div>
 <p><strong>switch vs if-else — When to Use Which?</strong></p>
 <table>
 <thead>
@@ -2448,227 +2372,235 @@ Cases 1-5 all fall through to the same output.</p>
 </table>
 <div class="admonition warning">
 <p class="admonition-title">Always use <code>break</code>!</p>
-<p>Forgetting <code>break</code> causes unintended fall-through:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
-<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;One</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="w">        </span><span class="c1">// ❌ Missing break — falls into case 2!</span>
-<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
-<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Two</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// Also runs when x=1!</span>
-<a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a><span class="p">}</span>
-</code></pre></div></p>
 </div>
+<p>Forgetting <code>break</code> causes unintended fall-through:
+<code>c
+    switch (x) {
+        case 1:
+            printf("One\n");
+            // ❌ Missing break — falls into case 2!
+        case 2:
+            printf("Two\n");  // Also runs when x=1!
+            break;
+    }</code></p>
 <hr />
 <h2 id="ternary-operator">⚡ Ternary Operator (<code>? :</code>)<a class="headerlink" href="#ternary-operator" title="Permanent link">&para;</a></h2>
 <p>A <strong>short one-line</strong> version of <code>if-else</code>.</p>
 <p><strong>Syntax</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="n">variable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">condition</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">value_if_true</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">value_if_false</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">variable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">condition</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">value_if_true</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">value_if_false</span><span class="p">;</span>
 </code></pre></div>
 <p><strong>Memory Visualization</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>  condition  ?  value_if_true  :  value_if_false
-<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>      │               │                  │
-<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>  Is it true?     Use this           Use this
-<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>                   if YES             if NO
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>  condition  ?  value_if_true  :  value_if_false
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>      │               │                  │
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>  Is it true?     Use this           Use this
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>                   if YES             if NO
 </code></pre></div>
 <p><strong>Ternary Variants</strong></p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Basic Usage</label><label for="__tabbed_3_2">Find Maximum</label><label for="__tabbed_3_3">Even or Odd</label><label for="__tabbed_3_4">Inside printf</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Basic Usage</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block">
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
-<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">age</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">18</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s">&quot;Adult&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Minor&quot;</span><span class="p">;</span>
-<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>
-<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Status: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="p">);</span>
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="kt">char</span><span class="w"> </span><span class="err">\</span><span class="o">*</span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">age</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">18</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s">&quot;Adult&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Minor&quot;</span><span class="p">;</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Status: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="p">);</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="w">    </span><span class="err">```</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="w">    </span><span class="o">**</span><span class="n">Output</span><span class="o">:**</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="w">    </span><span class="err">```</span>
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="w">    </span><span class="nl">Status</span><span class="p">:</span><span class="w"> </span><span class="n">Adult</span>
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="w">    </span><span class="err">```</span>
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>
+<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="o">===</span><span class="w"> </span><span class="s">&quot;Find Maximum&quot;</span>
+<a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="err">```</span><span class="n">c</span>
+<a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+<a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a>
+<a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Max: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">max</span><span class="p">);</span>
+<a id="__codelineno-27-17" name="__codelineno-27-17" href="#__codelineno-27-17"></a><span class="w">    </span><span class="err">```</span>
+<a id="__codelineno-27-18" name="__codelineno-27-18" href="#__codelineno-27-18"></a><span class="w">    </span><span class="o">**</span><span class="n">Output</span><span class="o">:**</span>
+<a id="__codelineno-27-19" name="__codelineno-27-19" href="#__codelineno-27-19"></a><span class="w">    </span><span class="err">```</span>
+<a id="__codelineno-27-20" name="__codelineno-27-20" href="#__codelineno-27-20"></a><span class="w">    </span><span class="nl">Max</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span>
+<a id="__codelineno-27-21" name="__codelineno-27-21" href="#__codelineno-27-21"></a><span class="w">    </span><span class="err">```</span>
+<a id="__codelineno-27-22" name="__codelineno-27-22" href="#__codelineno-27-22"></a>
+<a id="__codelineno-27-23" name="__codelineno-27-23" href="#__codelineno-27-23"></a><span class="o">===</span><span class="w"> </span><span class="s">&quot;Even or Odd&quot;</span>
+<a id="__codelineno-27-24" name="__codelineno-27-24" href="#__codelineno-27-24"></a><span class="err">`</span><span class="n">c</span>
+<a id="__codelineno-27-25" name="__codelineno-27-25" href="#__codelineno-27-25"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+<a id="__codelineno-27-26" name="__codelineno-27-26" href="#__codelineno-27-26"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d is %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">num</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s">&quot;Even&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Odd&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-27" name="__codelineno-27-27" href="#__codelineno-27-27"></a><span class="w">    </span><span class="err">`</span>
+<a id="__codelineno-27-28" name="__codelineno-27-28" href="#__codelineno-27-28"></a><span class="o">**</span><span class="n">Output</span><span class="o">:**</span>
+<a id="__codelineno-27-29" name="__codelineno-27-29" href="#__codelineno-27-29"></a><span class="err">`</span><span class="w">     </span><span class="mi">7</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">Odd</span>
+<a id="__codelineno-27-30" name="__codelineno-27-30" href="#__codelineno-27-30"></a><span class="w">    </span><span class="err">`</span>
+<a id="__codelineno-27-31" name="__codelineno-27-31" href="#__codelineno-27-31"></a>
+<a id="__codelineno-27-32" name="__codelineno-27-32" href="#__codelineno-27-32"></a><span class="o">===</span><span class="w"> </span><span class="s">&quot;Inside printf&quot;</span>
+<a id="__codelineno-27-33" name="__codelineno-27-33" href="#__codelineno-27-33"></a><span class="err">`</span><span class="n">c</span>
+<a id="__codelineno-27-34" name="__codelineno-27-34" href="#__codelineno-27-34"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">85</span><span class="p">;</span>
+<a id="__codelineno-27-35" name="__codelineno-27-35" href="#__codelineno-27-35"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Result: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">score</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">50</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s">&quot;PASS ✅&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s">&quot;FAIL ❌&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-36" name="__codelineno-27-36" href="#__codelineno-27-36"></a><span class="w">    </span><span class="err">`</span>
+<a id="__codelineno-27-37" name="__codelineno-27-37" href="#__codelineno-27-37"></a><span class="o">**</span><span class="n">Output</span><span class="o">:**</span>
+<a id="__codelineno-27-38" name="__codelineno-27-38" href="#__codelineno-27-38"></a><span class="err">`</span><span class="w">     </span><span class="n">Result</span><span class="o">:</span><span class="w"> </span><span class="n">PASS</span><span class="w"> </span><span class="err">✅</span>
+<a id="__codelineno-27-39" name="__codelineno-27-39" href="#__codelineno-27-39"></a><span class="w">    </span><span class="err">`</span>
+<a id="__codelineno-27-40" name="__codelineno-27-40" href="#__codelineno-27-40"></a>
+<a id="__codelineno-27-41" name="__codelineno-27-41" href="#__codelineno-27-41"></a><span class="o">!!!</span><span class="w"> </span><span class="n">tip</span><span class="w"> </span><span class="s">&quot;When to use ternary?&quot;</span>
+<a id="__codelineno-27-42" name="__codelineno-27-42" href="#__codelineno-27-42"></a><span class="n">Use</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="o">**</span><span class="n">simple</span><span class="p">,</span><span class="w"> </span><span class="kt">short</span><span class="o">**</span><span class="w"> </span><span class="n">conditions</span><span class="w"> </span><span class="n">only</span><span class="p">.</span><span class="w"> </span><span class="n">If</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="k">complex</span><span class="p">,</span><span class="w"> </span><span class="n">use</span><span class="w"> </span><span class="err">`</span><span class="k">if</span><span class="o">-</span><span class="k">else</span><span class="err">`</span><span class="o">:</span>
+<a id="__codelineno-27-43" name="__codelineno-27-43" href="#__codelineno-27-43"></a><span class="err">```</span><span class="n">c</span>
+<a id="__codelineno-27-44" name="__codelineno-27-44" href="#__codelineno-27-44"></a><span class="c1">// ✅ Good — simple and clear</span>
+<a id="__codelineno-27-45" name="__codelineno-27-45" href="#__codelineno-27-45"></a><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<a id="__codelineno-27-46" name="__codelineno-27-46" href="#__codelineno-27-46"></a>
+<a id="__codelineno-27-47" name="__codelineno-27-47" href="#__codelineno-27-47"></a><span class="w">    </span><span class="c1">// ❌ Bad — too complex, hard to read</span>
+<a id="__codelineno-27-48" name="__codelineno-27-48" href="#__codelineno-27-48"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">c</span><span class="p">);</span>
+<a id="__codelineno-27-49" name="__codelineno-27-49" href="#__codelineno-27-49"></a><span class="w">    </span><span class="err">```</span>
+<a id="__codelineno-27-50" name="__codelineno-27-50" href="#__codelineno-27-50"></a>
+<a id="__codelineno-27-51" name="__codelineno-27-51" href="#__codelineno-27-51"></a><span class="o">---</span>
+<a id="__codelineno-27-52" name="__codelineno-27-52" href="#__codelineno-27-52"></a>
+<a id="__codelineno-27-53" name="__codelineno-27-53" href="#__codelineno-27-53"></a><span class="cp">## 🧠 Full Practical Example — ATM System</span>
+<a id="__codelineno-27-54" name="__codelineno-27-54" href="#__codelineno-27-54"></a>
+<a id="__codelineno-27-55" name="__codelineno-27-55" href="#__codelineno-27-55"></a><span class="err">```</span><span class="n">c</span>
+<a id="__codelineno-27-56" name="__codelineno-27-56" href="#__codelineno-27-56"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-27-57" name="__codelineno-27-57" href="#__codelineno-27-57"></a>
+<a id="__codelineno-27-58" name="__codelineno-27-58" href="#__codelineno-27-58"></a><span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-59" name="__codelineno-27-59" href="#__codelineno-27-59"></a><span class="w">    </span><span class="kt">int</span><span class="w">   </span><span class="n">pin</span><span class="p">;</span>
+<a id="__codelineno-27-60" name="__codelineno-27-60" href="#__codelineno-27-60"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">balance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10000.00</span><span class="p">;</span>
+<a id="__codelineno-27-61" name="__codelineno-27-61" href="#__codelineno-27-61"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">amount</span><span class="p">;</span>
+<a id="__codelineno-27-62" name="__codelineno-27-62" href="#__codelineno-27-62"></a><span class="w">    </span><span class="kt">int</span><span class="w">   </span><span class="n">choice</span><span class="p">;</span>
+<a id="__codelineno-27-63" name="__codelineno-27-63" href="#__codelineno-27-63"></a>
+<a id="__codelineno-27-64" name="__codelineno-27-64" href="#__codelineno-27-64"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;╔══════════════════════════════╗</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-65" name="__codelineno-27-65" href="#__codelineno-27-65"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;║         ATM MACHINE          ║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-66" name="__codelineno-27-66" href="#__codelineno-27-66"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;╚══════════════════════════════╝</span><span class="se">\n\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-67" name="__codelineno-27-67" href="#__codelineno-27-67"></a>
+<a id="__codelineno-27-68" name="__codelineno-27-68" href="#__codelineno-27-68"></a><span class="w">    </span><span class="c1">// ── PIN Verification ────────────────────</span>
+<a id="__codelineno-27-69" name="__codelineno-27-69" href="#__codelineno-27-69"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter your PIN: &quot;</span><span class="p">);</span>
+<a id="__codelineno-27-70" name="__codelineno-27-70" href="#__codelineno-27-70"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pin</span><span class="p">);</span>
+<a id="__codelineno-27-71" name="__codelineno-27-71" href="#__codelineno-27-71"></a>
+<a id="__codelineno-27-72" name="__codelineno-27-72" href="#__codelineno-27-72"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pin</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">1234</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-73" name="__codelineno-27-73" href="#__codelineno-27-73"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Wrong PIN! Access denied.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-74" name="__codelineno-27-74" href="#__codelineno-27-74"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-27-75" name="__codelineno-27-75" href="#__codelineno-27-75"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-27-76" name="__codelineno-27-76" href="#__codelineno-27-76"></a>
+<a id="__codelineno-27-77" name="__codelineno-27-77" href="#__codelineno-27-77"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;✅ PIN correct! Welcome!</span><span class="se">\n\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-78" name="__codelineno-27-78" href="#__codelineno-27-78"></a>
+<a id="__codelineno-27-79" name="__codelineno-27-79" href="#__codelineno-27-79"></a><span class="w">    </span><span class="c1">// ── Menu ────────────────────────────────</span>
+<a id="__codelineno-27-80" name="__codelineno-27-80" href="#__codelineno-27-80"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;1. Check Balance</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-81" name="__codelineno-27-81" href="#__codelineno-27-81"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;2. Withdraw</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-82" name="__codelineno-27-82" href="#__codelineno-27-82"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;3. Deposit</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-83" name="__codelineno-27-83" href="#__codelineno-27-83"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Choice: &quot;</span><span class="p">);</span>
+<a id="__codelineno-27-84" name="__codelineno-27-84" href="#__codelineno-27-84"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">choice</span><span class="p">);</span>
+<a id="__codelineno-27-85" name="__codelineno-27-85" href="#__codelineno-27-85"></a>
+<a id="__codelineno-27-86" name="__codelineno-27-86" href="#__codelineno-27-86"></a><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">choice</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-87" name="__codelineno-27-87" href="#__codelineno-27-87"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-27-88" name="__codelineno-27-88" href="#__codelineno-27-88"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">💰 Your balance: ₹%.2f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">balance</span><span class="p">);</span>
+<a id="__codelineno-27-89" name="__codelineno-27-89" href="#__codelineno-27-89"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-27-90" name="__codelineno-27-90" href="#__codelineno-27-90"></a>
+<a id="__codelineno-27-91" name="__codelineno-27-91" href="#__codelineno-27-91"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<a id="__codelineno-27-92" name="__codelineno-27-92" href="#__codelineno-27-92"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter amount to withdraw: ₹&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-93" name="__codelineno-27-93" href="#__codelineno-27-93"></a><span class="w">            </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%f&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">amount</span><span class="p">);</span>
+<a id="__codelineno-27-94" name="__codelineno-27-94" href="#__codelineno-27-94"></a>
+<a id="__codelineno-27-95" name="__codelineno-27-95" href="#__codelineno-27-95"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">amount</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-96" name="__codelineno-27-96" href="#__codelineno-27-96"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Invalid amount!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-97" name="__codelineno-27-97" href="#__codelineno-27-97"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">amount</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">balance</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-98" name="__codelineno-27-98" href="#__codelineno-27-98"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Insufficient balance!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-99" name="__codelineno-27-99" href="#__codelineno-27-99"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">amount</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">20000</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-100" name="__codelineno-27-100" href="#__codelineno-27-100"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Exceeds daily limit of ₹20,000!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-101" name="__codelineno-27-101" href="#__codelineno-27-101"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-102" name="__codelineno-27-102" href="#__codelineno-27-102"></a><span class="w">                </span><span class="n">balance</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">amount</span><span class="p">;</span>
+<a id="__codelineno-27-103" name="__codelineno-27-103" href="#__codelineno-27-103"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;✅ ₹%.2f withdrawn!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">amount</span><span class="p">);</span>
+<a id="__codelineno-27-104" name="__codelineno-27-104" href="#__codelineno-27-104"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;💰 Remaining: ₹%.2f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">balance</span><span class="p">);</span>
+<a id="__codelineno-27-105" name="__codelineno-27-105" href="#__codelineno-27-105"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-27-106" name="__codelineno-27-106" href="#__codelineno-27-106"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-27-107" name="__codelineno-27-107" href="#__codelineno-27-107"></a>
+<a id="__codelineno-27-108" name="__codelineno-27-108" href="#__codelineno-27-108"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<a id="__codelineno-27-109" name="__codelineno-27-109" href="#__codelineno-27-109"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter amount to deposit: ₹&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-110" name="__codelineno-27-110" href="#__codelineno-27-110"></a><span class="w">            </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%f&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">amount</span><span class="p">);</span>
+<a id="__codelineno-27-111" name="__codelineno-27-111" href="#__codelineno-27-111"></a>
+<a id="__codelineno-27-112" name="__codelineno-27-112" href="#__codelineno-27-112"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">amount</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-113" name="__codelineno-27-113" href="#__codelineno-27-113"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Invalid amount!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-114" name="__codelineno-27-114" href="#__codelineno-27-114"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-115" name="__codelineno-27-115" href="#__codelineno-27-115"></a><span class="w">                </span><span class="n">balance</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">amount</span><span class="p">;</span>
+<a id="__codelineno-27-116" name="__codelineno-27-116" href="#__codelineno-27-116"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;✅ ₹%.2f deposited!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">amount</span><span class="p">);</span>
+<a id="__codelineno-27-117" name="__codelineno-27-117" href="#__codelineno-27-117"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;💰 New balance: ₹%.2f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">balance</span><span class="p">);</span>
+<a id="__codelineno-27-118" name="__codelineno-27-118" href="#__codelineno-27-118"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-27-119" name="__codelineno-27-119" href="#__codelineno-27-119"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-27-120" name="__codelineno-27-120" href="#__codelineno-27-120"></a>
+<a id="__codelineno-27-121" name="__codelineno-27-121" href="#__codelineno-27-121"></a><span class="w">        </span><span class="k">default</span><span class="o">:</span>
+<a id="__codelineno-27-122" name="__codelineno-27-122" href="#__codelineno-27-122"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Invalid choice!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-123" name="__codelineno-27-123" href="#__codelineno-27-123"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-27-124" name="__codelineno-27-124" href="#__codelineno-27-124"></a>
+<a id="__codelineno-27-125" name="__codelineno-27-125" href="#__codelineno-27-125"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Thank you for using our ATM! 👋</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-27-126" name="__codelineno-27-126" href="#__codelineno-27-126"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-27-127" name="__codelineno-27-127" href="#__codelineno-27-127"></a><span class="p">}</span>
 </code></pre></div>
-<strong>Output:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>Status: Adult
-</code></pre></div></p>
-</div>
-<div class="tabbed-block">
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
-<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
-<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>
-<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Max: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">max</span><span class="p">);</span>
+<p><strong>Output:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>╔══════════════════════════════╗
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>║         ATM MACHINE          ║
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>╚══════════════════════════════╝
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>Enter your PIN: 1234
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>✅ PIN correct! Welcome!
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>1. Check Balance
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>2. Withdraw
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a>3. Deposit
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a>Choice: 2
+<a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>Enter amount to withdraw: ₹5000
+<a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a>✅ ₹5000.00 withdrawn!
+<a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a>💰 Remaining: ₹5000.00
+<a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a>
+<a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a>Thank you for using our ATM! 👋
 </code></pre></div>
-<strong>Output:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>Max: 20
-</code></pre></div></p>
-</div>
-<div class="tabbed-block">
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
-<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d is %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">num</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s">&quot;Even&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Odd&quot;</span><span class="p">);</span>
-</code></pre></div>
-<strong>Output:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>7 is Odd
-</code></pre></div></p>
-</div>
-<div class="tabbed-block">
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">85</span><span class="p">;</span>
-<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Result: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">score</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">50</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s">&quot;PASS ✅&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s">&quot;FAIL ❌&quot;</span><span class="p">);</span>
-</code></pre></div>
-<strong>Output:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>Result: PASS ✅
-</code></pre></div></p>
-</div>
-</div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">When to use ternary?</p>
-<p>Use it for <strong>simple, short</strong> conditions only. If the logic is complex, use <code>if-else</code>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="c1">// ✅ Good — simple and clear</span>
-<a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
-<a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a>
-<a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a><span class="c1">// ❌ Bad — too complex, hard to read</span>
-<a id="__codelineno-47-5" name="__codelineno-47-5" href="#__codelineno-47-5"></a><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">c</span><span class="p">);</span>
-</code></pre></div></p>
-</div>
-<hr />
-<h2 id="full-practical-example-atm-system">🧠 Full Practical Example — ATM System<a class="headerlink" href="#full-practical-example-atm-system" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-<a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>
-<a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-48-4" name="__codelineno-48-4" href="#__codelineno-48-4"></a><span class="w">    </span><span class="kt">int</span><span class="w">   </span><span class="n">pin</span><span class="p">;</span>
-<a id="__codelineno-48-5" name="__codelineno-48-5" href="#__codelineno-48-5"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">balance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10000.00</span><span class="p">;</span>
-<a id="__codelineno-48-6" name="__codelineno-48-6" href="#__codelineno-48-6"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">amount</span><span class="p">;</span>
-<a id="__codelineno-48-7" name="__codelineno-48-7" href="#__codelineno-48-7"></a><span class="w">    </span><span class="kt">int</span><span class="w">   </span><span class="n">choice</span><span class="p">;</span>
-<a id="__codelineno-48-8" name="__codelineno-48-8" href="#__codelineno-48-8"></a>
-<a id="__codelineno-48-9" name="__codelineno-48-9" href="#__codelineno-48-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;╔══════════════════════════════╗</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-10" name="__codelineno-48-10" href="#__codelineno-48-10"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;║         ATM MACHINE          ║</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-11" name="__codelineno-48-11" href="#__codelineno-48-11"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;╚══════════════════════════════╝</span><span class="se">\n\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-12" name="__codelineno-48-12" href="#__codelineno-48-12"></a>
-<a id="__codelineno-48-13" name="__codelineno-48-13" href="#__codelineno-48-13"></a><span class="w">    </span><span class="c1">// ── PIN Verification ────────────────────</span>
-<a id="__codelineno-48-14" name="__codelineno-48-14" href="#__codelineno-48-14"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter your PIN: &quot;</span><span class="p">);</span>
-<a id="__codelineno-48-15" name="__codelineno-48-15" href="#__codelineno-48-15"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pin</span><span class="p">);</span>
-<a id="__codelineno-48-16" name="__codelineno-48-16" href="#__codelineno-48-16"></a>
-<a id="__codelineno-48-17" name="__codelineno-48-17" href="#__codelineno-48-17"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pin</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">1234</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-48-18" name="__codelineno-48-18" href="#__codelineno-48-18"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Wrong PIN! Access denied.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-19" name="__codelineno-48-19" href="#__codelineno-48-19"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<a id="__codelineno-48-20" name="__codelineno-48-20" href="#__codelineno-48-20"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-48-21" name="__codelineno-48-21" href="#__codelineno-48-21"></a>
-<a id="__codelineno-48-22" name="__codelineno-48-22" href="#__codelineno-48-22"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;✅ PIN correct! Welcome!</span><span class="se">\n\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-23" name="__codelineno-48-23" href="#__codelineno-48-23"></a>
-<a id="__codelineno-48-24" name="__codelineno-48-24" href="#__codelineno-48-24"></a><span class="w">    </span><span class="c1">// ── Menu ────────────────────────────────</span>
-<a id="__codelineno-48-25" name="__codelineno-48-25" href="#__codelineno-48-25"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;1. Check Balance</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-26" name="__codelineno-48-26" href="#__codelineno-48-26"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;2. Withdraw</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-27" name="__codelineno-48-27" href="#__codelineno-48-27"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;3. Deposit</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-28" name="__codelineno-48-28" href="#__codelineno-48-28"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Choice: &quot;</span><span class="p">);</span>
-<a id="__codelineno-48-29" name="__codelineno-48-29" href="#__codelineno-48-29"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">choice</span><span class="p">);</span>
-<a id="__codelineno-48-30" name="__codelineno-48-30" href="#__codelineno-48-30"></a>
-<a id="__codelineno-48-31" name="__codelineno-48-31" href="#__codelineno-48-31"></a><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">choice</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-48-32" name="__codelineno-48-32" href="#__codelineno-48-32"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
-<a id="__codelineno-48-33" name="__codelineno-48-33" href="#__codelineno-48-33"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">💰 Your balance: ₹%.2f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">balance</span><span class="p">);</span>
-<a id="__codelineno-48-34" name="__codelineno-48-34" href="#__codelineno-48-34"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-48-35" name="__codelineno-48-35" href="#__codelineno-48-35"></a>
-<a id="__codelineno-48-36" name="__codelineno-48-36" href="#__codelineno-48-36"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
-<a id="__codelineno-48-37" name="__codelineno-48-37" href="#__codelineno-48-37"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter amount to withdraw: ₹&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-38" name="__codelineno-48-38" href="#__codelineno-48-38"></a><span class="w">            </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%f&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">amount</span><span class="p">);</span>
-<a id="__codelineno-48-39" name="__codelineno-48-39" href="#__codelineno-48-39"></a>
-<a id="__codelineno-48-40" name="__codelineno-48-40" href="#__codelineno-48-40"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">amount</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-48-41" name="__codelineno-48-41" href="#__codelineno-48-41"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Invalid amount!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-42" name="__codelineno-48-42" href="#__codelineno-48-42"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">amount</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">balance</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-48-43" name="__codelineno-48-43" href="#__codelineno-48-43"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Insufficient balance!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-44" name="__codelineno-48-44" href="#__codelineno-48-44"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">amount</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">20000</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-48-45" name="__codelineno-48-45" href="#__codelineno-48-45"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Exceeds daily limit of ₹20,000!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-46" name="__codelineno-48-46" href="#__codelineno-48-46"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-48-47" name="__codelineno-48-47" href="#__codelineno-48-47"></a><span class="w">                </span><span class="n">balance</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">amount</span><span class="p">;</span>
-<a id="__codelineno-48-48" name="__codelineno-48-48" href="#__codelineno-48-48"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;✅ ₹%.2f withdrawn!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">amount</span><span class="p">);</span>
-<a id="__codelineno-48-49" name="__codelineno-48-49" href="#__codelineno-48-49"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;💰 Remaining: ₹%.2f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">balance</span><span class="p">);</span>
-<a id="__codelineno-48-50" name="__codelineno-48-50" href="#__codelineno-48-50"></a><span class="w">            </span><span class="p">}</span>
-<a id="__codelineno-48-51" name="__codelineno-48-51" href="#__codelineno-48-51"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-48-52" name="__codelineno-48-52" href="#__codelineno-48-52"></a>
-<a id="__codelineno-48-53" name="__codelineno-48-53" href="#__codelineno-48-53"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
-<a id="__codelineno-48-54" name="__codelineno-48-54" href="#__codelineno-48-54"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter amount to deposit: ₹&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-55" name="__codelineno-48-55" href="#__codelineno-48-55"></a><span class="w">            </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%f&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">amount</span><span class="p">);</span>
-<a id="__codelineno-48-56" name="__codelineno-48-56" href="#__codelineno-48-56"></a>
-<a id="__codelineno-48-57" name="__codelineno-48-57" href="#__codelineno-48-57"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">amount</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-48-58" name="__codelineno-48-58" href="#__codelineno-48-58"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Invalid amount!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-59" name="__codelineno-48-59" href="#__codelineno-48-59"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-48-60" name="__codelineno-48-60" href="#__codelineno-48-60"></a><span class="w">                </span><span class="n">balance</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">amount</span><span class="p">;</span>
-<a id="__codelineno-48-61" name="__codelineno-48-61" href="#__codelineno-48-61"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;✅ ₹%.2f deposited!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">amount</span><span class="p">);</span>
-<a id="__codelineno-48-62" name="__codelineno-48-62" href="#__codelineno-48-62"></a><span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;💰 New balance: ₹%.2f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">balance</span><span class="p">);</span>
-<a id="__codelineno-48-63" name="__codelineno-48-63" href="#__codelineno-48-63"></a><span class="w">            </span><span class="p">}</span>
-<a id="__codelineno-48-64" name="__codelineno-48-64" href="#__codelineno-48-64"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-48-65" name="__codelineno-48-65" href="#__codelineno-48-65"></a>
-<a id="__codelineno-48-66" name="__codelineno-48-66" href="#__codelineno-48-66"></a><span class="w">        </span><span class="k">default</span><span class="o">:</span>
-<a id="__codelineno-48-67" name="__codelineno-48-67" href="#__codelineno-48-67"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;❌ Invalid choice!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-68" name="__codelineno-48-68" href="#__codelineno-48-68"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-48-69" name="__codelineno-48-69" href="#__codelineno-48-69"></a>
-<a id="__codelineno-48-70" name="__codelineno-48-70" href="#__codelineno-48-70"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Thank you for using our ATM! 👋</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-48-71" name="__codelineno-48-71" href="#__codelineno-48-71"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-48-72" name="__codelineno-48-72" href="#__codelineno-48-72"></a><span class="p">}</span>
-</code></pre></div>
-<p><strong>Output:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>╔══════════════════════════════╗
-<a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>║         ATM MACHINE          ║
-<a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a>╚══════════════════════════════╝
-<a id="__codelineno-49-4" name="__codelineno-49-4" href="#__codelineno-49-4"></a>
-<a id="__codelineno-49-5" name="__codelineno-49-5" href="#__codelineno-49-5"></a>Enter your PIN: 1234
-<a id="__codelineno-49-6" name="__codelineno-49-6" href="#__codelineno-49-6"></a>✅ PIN correct! Welcome!
-<a id="__codelineno-49-7" name="__codelineno-49-7" href="#__codelineno-49-7"></a>
-<a id="__codelineno-49-8" name="__codelineno-49-8" href="#__codelineno-49-8"></a>1. Check Balance
-<a id="__codelineno-49-9" name="__codelineno-49-9" href="#__codelineno-49-9"></a>2. Withdraw
-<a id="__codelineno-49-10" name="__codelineno-49-10" href="#__codelineno-49-10"></a>3. Deposit
-<a id="__codelineno-49-11" name="__codelineno-49-11" href="#__codelineno-49-11"></a>Choice: 2
-<a id="__codelineno-49-12" name="__codelineno-49-12" href="#__codelineno-49-12"></a>Enter amount to withdraw: ₹5000
-<a id="__codelineno-49-13" name="__codelineno-49-13" href="#__codelineno-49-13"></a>✅ ₹5000.00 withdrawn!
-<a id="__codelineno-49-14" name="__codelineno-49-14" href="#__codelineno-49-14"></a>💰 Remaining: ₹5000.00
-<a id="__codelineno-49-15" name="__codelineno-49-15" href="#__codelineno-49-15"></a>
-<a id="__codelineno-49-16" name="__codelineno-49-16" href="#__codelineno-49-16"></a>Thank you for using our ATM! 👋
-</code></pre></div></p>
 <hr />
 <h2 id="common-mistakes">⚠️ Common Mistakes<a class="headerlink" href="#common-mistakes" title="Permanent link">&para;</a></h2>
 <h3 id="1-using-instead-of">1. Using <code>=</code> instead of <code>==</code><a class="headerlink" href="#1-using-instead-of" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w">   </span><span class="c1">// ❌ Assigns 5 to x — always TRUE!</span>
-<a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w">  </span><span class="c1">// ✅ Compares x with 5</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w">   </span><span class="c1">// ❌ Assigns 5 to x — always TRUE!</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w">  </span><span class="c1">// ✅ Compares x with 5</span>
 </code></pre></div>
 <h3 id="2-missing-curly-braces">2. Missing curly braces <code>{}</code><a class="headerlink" href="#2-missing-curly-braces" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="c1">// ❌ Only first line is inside if!</span>
-<a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
-<a id="__codelineno-51-3" name="__codelineno-51-3" href="#__codelineno-51-3"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Positive</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-51-4" name="__codelineno-51-4" href="#__codelineno-51-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;This always runs!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// NOT inside if!</span>
-<a id="__codelineno-51-5" name="__codelineno-51-5" href="#__codelineno-51-5"></a>
-<a id="__codelineno-51-6" name="__codelineno-51-6" href="#__codelineno-51-6"></a><span class="c1">// ✅ Always use braces</span>
-<a id="__codelineno-51-7" name="__codelineno-51-7" href="#__codelineno-51-7"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-51-8" name="__codelineno-51-8" href="#__codelineno-51-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Positive</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-51-9" name="__codelineno-51-9" href="#__codelineno-51-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;This is inside if</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-51-10" name="__codelineno-51-10" href="#__codelineno-51-10"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="c1">// ❌ Only first line is inside if!</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Positive</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;This always runs!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// NOT inside if!</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="c1">// ✅ Always use braces</span>
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Positive</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;This is inside if</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a><span class="p">}</span>
 </code></pre></div>
 <h3 id="3-missing-break-in-switch">3. Missing <code>break</code> in switch<a class="headerlink" href="#3-missing-break-in-switch" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="c1">// ❌ Falls through to case 2!</span>
-<a id="__codelineno-52-2" name="__codelineno-52-2" href="#__codelineno-52-2"></a><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-52-3" name="__codelineno-52-3" href="#__codelineno-52-3"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
-<a id="__codelineno-52-4" name="__codelineno-52-4" href="#__codelineno-52-4"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;One</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-52-5" name="__codelineno-52-5" href="#__codelineno-52-5"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
-<a id="__codelineno-52-6" name="__codelineno-52-6" href="#__codelineno-52-6"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Two</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-52-7" name="__codelineno-52-7" href="#__codelineno-52-7"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-52-8" name="__codelineno-52-8" href="#__codelineno-52-8"></a><span class="p">}</span>
-<a id="__codelineno-52-9" name="__codelineno-52-9" href="#__codelineno-52-9"></a>
-<a id="__codelineno-52-10" name="__codelineno-52-10" href="#__codelineno-52-10"></a><span class="c1">// ✅ Always add break</span>
-<a id="__codelineno-52-11" name="__codelineno-52-11" href="#__codelineno-52-11"></a><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-52-12" name="__codelineno-52-12" href="#__codelineno-52-12"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
-<a id="__codelineno-52-13" name="__codelineno-52-13" href="#__codelineno-52-13"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;One</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-52-14" name="__codelineno-52-14" href="#__codelineno-52-14"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-52-15" name="__codelineno-52-15" href="#__codelineno-52-15"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
-<a id="__codelineno-52-16" name="__codelineno-52-16" href="#__codelineno-52-16"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Two</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-52-17" name="__codelineno-52-17" href="#__codelineno-52-17"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<a id="__codelineno-52-18" name="__codelineno-52-18" href="#__codelineno-52-18"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="c1">// ❌ Falls through to case 2!</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;One</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Two</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="p">}</span>
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>
+<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a><span class="c1">// ✅ Always add break</span>
+<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;One</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-31-15" name="__codelineno-31-15" href="#__codelineno-31-15"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<a id="__codelineno-31-16" name="__codelineno-31-16" href="#__codelineno-31-16"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Two</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-31-18" name="__codelineno-31-18" href="#__codelineno-31-18"></a><span class="p">}</span>
 </code></pre></div>
 <h3 id="4-comparing-floats-with">4. Comparing floats with <code>==</code><a class="headerlink" href="#4-comparing-floats-with" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="kt">float</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">0.2</span><span class="p">;</span>
-<a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a>
-<a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">f</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">0.3</span><span class="p">)</span><span class="w">              </span><span class="c1">// ❌ May never be true due to precision!</span>
-<a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">f</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">0.3</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.0001</span><span class="p">)</span><span class="w">     </span><span class="c1">// ✅ Use a small tolerance instead</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="kt">float</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">0.2</span><span class="p">;</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">f</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">0.3</span><span class="p">)</span><span class="w">              </span><span class="c1">// ❌ May never be true due to precision!</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">f</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">0.3</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.0001</span><span class="p">)</span><span class="w">     </span><span class="c1">// ✅ Use a small tolerance instead</span>
 </code></pre></div>
 <h3 id="5-semicolon-after-if">5. Semicolon after <code>if</code><a class="headerlink" href="#5-semicolon-after-if" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w">               </span><span class="c1">// ❌ Semicolon ends the if immediately!</span>
-<a id="__codelineno-54-2" name="__codelineno-54-2" href="#__codelineno-54-2"></a><span class="p">{</span>
-<a id="__codelineno-54-3" name="__codelineno-54-3" href="#__codelineno-54-3"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Positive</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// This ALWAYS runs!</span>
-<a id="__codelineno-54-4" name="__codelineno-54-4" href="#__codelineno-54-4"></a><span class="p">}</span>
-<a id="__codelineno-54-5" name="__codelineno-54-5" href="#__codelineno-54-5"></a>
-<a id="__codelineno-54-6" name="__codelineno-54-6" href="#__codelineno-54-6"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w">                </span><span class="c1">// ✅ No semicolon</span>
-<a id="__codelineno-54-7" name="__codelineno-54-7" href="#__codelineno-54-7"></a><span class="p">{</span>
-<a id="__codelineno-54-8" name="__codelineno-54-8" href="#__codelineno-54-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Positive</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<a id="__codelineno-54-9" name="__codelineno-54-9" href="#__codelineno-54-9"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w">               </span><span class="c1">// ❌ Semicolon ends the if immediately!</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="p">{</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Positive</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// This ALWAYS runs!</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="p">}</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w">                </span><span class="c1">// ✅ No semicolon</span>
+<a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a><span class="p">{</span>
+<a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Positive</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a><span class="p">}</span>
 </code></pre></div>
 <hr />
 <h2 id="quick-reference-summary">✅ Quick Reference Summary<a class="headerlink" href="#quick-reference-summary" title="Permanent link">&para;</a></h2>
@@ -2716,12 +2648,12 @@ Cases 1-5 all fall through to the same output.</p>
 <hr />
 <div class="admonition success">
 <p class="admonition-title">You Can Now Control Your Program's Flow! 🎉</p>
-<p>You know how to make your C programs smart — they can now make decisions, handle multiple cases, and respond differently based on conditions and user input. Practice these well!</p>
 </div>
+<p>You know how to make your C programs smart — they can now make decisions, handle multiple cases, and respond differently based on conditions and user input. Practice these well!</p>
 <div class="admonition tip">
 <p class="admonition-title">Next Topic</p>
-<p>Now that you can make decisions, learn how to <strong>repeat</strong> things → <strong><a href="../Loops/">Loops</a></strong></p>
 </div>
+<p>Now that you can make decisions, learn how to <strong>repeat</strong> things → <strong><a href="../Loops/">Loops</a></strong></p>
 
 
 
