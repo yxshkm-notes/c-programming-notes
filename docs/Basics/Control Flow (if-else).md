@@ -1,13 +1,6 @@
 # Control Flow in C 🔀
 
-!!! abstract "What You'll Learn"
-    - ✅ What control flow is and why it matters
-    - ✅ `if`, `if-else`, and `else-if` ladder
-    - ✅ Nested `if` statements
-    - ✅ Comparison and logical operators
-    - ✅ `switch` statement with fall-through
-    - ✅ Ternary operator (`? :`)
-    - ✅ Common mistakes to avoid
+!!! abstract "What You'll Learn" - ✅ What control flow is and why it matters - ✅ `if`, `if-else`, and `else-if` ladder - ✅ Nested `if` statements - ✅ Comparison and logical operators - ✅ `switch` statement with fall-through - ✅ Ternary operator (`? :`) - ✅ Common mistakes to avoid
 
 ---
 
@@ -18,7 +11,7 @@ By default, C executes code **line by line from top to bottom**. But real progra
 **Control Flow** is about controlling **which path** your program takes based on conditions.
 
 !!! tip "Think of it this way"
-    Just like a GPS gives you different routes based on traffic — control flow gives your program different paths based on conditions! 🛣️
+Just like a GPS gives you different routes based on traffic — control flow gives your program different paths based on conditions! 🛣️
 
 ```mermaid
 graph TD
@@ -92,18 +85,16 @@ int main() {
 ```
 
 **Output:**
+
 ```
 ✅ You are eligible to vote!
 Program continues...
 ```
 
-!!! info "Real-Life Example"
-    - Check if a number is positive
-    - Check if user is logged in
-    - Check if a file exists
+!!! info "Real-Life Example" - Check if a number is positive - Check if user is logged in - Check if a file exists
 
 !!! tip "What if age was 16?"
-    If `age = 16`, the condition `16 >= 18` is **FALSE** — the `printf` inside `if` is completely skipped.
+If `age = 16`, the condition `16 >= 18` is **FALSE** — the `printf` inside `if` is completely skipped.
 
 ---
 
@@ -162,6 +153,7 @@ int main() {
 ```
 
 **Output:**
+
 ```
 Enter your marks: 75
 🎉 Congratulations! You PASSED!
@@ -172,10 +164,7 @@ Enter your marks: 35
 😞 Sorry, you FAILED. Try again!
 ```
 
-!!! info "Real-Life Example"
-    - Login: correct password → welcome, wrong → denied
-    - Balance check: enough funds → proceed, not enough → decline
-    - Age check: adult → allow entry, minor → restrict
+!!! info "Real-Life Example" - Login: correct password → welcome, wrong → denied - Balance check: enough funds → proceed, not enough → decline - Age check: adult → allow entry, minor → restrict
 
 ---
 
@@ -249,6 +238,7 @@ int main() {
 ```
 
 **Output:**
+
 ```
 Enter your marks: 95  →  🌟 Grade: A+ — Excellent!
 Enter your marks: 73  →  👍 Grade: B  — Good!
@@ -256,7 +246,7 @@ Enter your marks: 42  →  😞 Grade: F  — Failed
 ```
 
 !!! info "Important Rule"
-    Once a condition is **TRUE**, C runs that block and **skips all remaining** `else if` and `else` blocks — even if they would also be true.
+Once a condition is **TRUE**, C runs that block and **skips all remaining** `else if` and `else` blocks — even if they would also be true.
 
 ---
 
@@ -309,6 +299,7 @@ int main() {
 ```
 
 **Output:**
+
 ```
 Enter username: admin
 Enter password: 1234
@@ -328,14 +319,15 @@ Enter password: 1234
 ```
 
 !!! warning "Don't Over-Nest!"
-    More than 3 levels of nesting makes code very hard to read. Use logical operators instead:
-    ```c
-    // ❌ Hard to read
-    if (a) {
-        if (b) {
-            if (c) { ... }
-        }
-    }
+More than 3 levels of nesting makes code very hard to read. Use logical operators instead:
+
+````c
+// ❌ Hard to read
+if (a) {
+if (b) {
+if (c) { ... }
+}
+}
 
     // ✅ Better — use && operator
     if (a && b && c) { ... }
@@ -349,7 +341,8 @@ Used inside conditions to compare values and combine conditions.
 
 **Comparison Operators**
 
-```
+````
+
      ┌──────────┬──────────────────────────┬────────────────────┐
      │ Operator │ Meaning                  │ Example            │
      ├──────────┼──────────────────────────┼────────────────────┤
@@ -360,11 +353,13 @@ Used inside conditions to compare values and combine conditions.
      │   >=     │ Greater than or equal to │ a >= b             │
      │   <=     │ Less than or equal to    │ a <= b             │
      └──────────┴──────────────────────────┴────────────────────┘
+
 ```
 
 **Logical Operators**
 
 ```
+
      ┌──────────┬──────────────────────────┬──────────────────────────┐
      │ Operator │ Meaning                  │ Example                  │
      ├──────────┼──────────────────────────┼──────────────────────────┤
@@ -372,14 +367,15 @@ Used inside conditions to compare values and combine conditions.
      │   ||     │ OR  — one must be true   │ isAdmin || isMod         │
      │   !      │ NOT — reverses result    │ !isLoggedIn              │
      └──────────┴──────────────────────────┴──────────────────────────┘
-```
+
+````
 
 **Operators in Action**
 
 === "&& (AND)"
-    ```c
-    int age   = 20;
-    int hasID = 1;
+```c
+int age = 20;
+int hasID = 1;
 
     if (age >= 18 && hasID == 1) {
         printf("✅ Entry allowed!\n");
@@ -392,9 +388,9 @@ Used inside conditions to compare values and combine conditions.
     Both conditions must be TRUE.
 
 === "|| (OR)"
-    ```c
-    int isWeekend = 0;
-    int isHoliday = 1;
+```c
+int isWeekend = 0;
+int isHoliday = 1;
 
     if (isWeekend || isHoliday) {
         printf("🎉 Day off!\n");
@@ -407,8 +403,8 @@ Used inside conditions to compare values and combine conditions.
     At least one condition must be TRUE.
 
 === "! (NOT)"
-    ```c
-    int isRaining = 0;
+```c
+int isRaining = 0;
 
     if (!isRaining) {
         printf("☀️ Go outside!\n");
@@ -421,8 +417,8 @@ Used inside conditions to compare values and combine conditions.
     Reverses the condition — `!0` becomes TRUE.
 
 !!! warning "Common Mistake — `=` vs `==`"
-    ```c
-    int x = 5;
+```c
+int x = 5;
 
     if (x = 10) { ... }   // ❌ WRONG — ASSIGNS 10 to x (always true!)
     if (x == 10) { ... }  // ✅ CORRECT — COMPARES x with 10
@@ -448,7 +444,7 @@ switch (variable) {
     default:
         // runs if no case matches
 }
-```
+````
 
 **Memory Visualization**
 
@@ -489,6 +485,7 @@ int main() {
 ```
 
 **Output:**
+
 ```
 Enter day number: 1  →  📅 Monday
 Enter day number: 6  →  🎉 Saturday — Weekend!
@@ -498,7 +495,7 @@ Enter day number: 9  →  ❌ Invalid! Enter 1-7
 **Fall-Through (Grouping Cases)**
 
 === "With break"
-    ```c
+`c
     switch (day) {
         case 1:
             printf("Monday\n");
@@ -507,11 +504,11 @@ Enter day number: 9  →  ❌ Invalid! Enter 1-7
             printf("Tuesday\n");
             break;
     }
-    ```
-    Each case runs independently.
+    `
+Each case runs independently.
 
 === "Without break (Fall-Through)"
-    ```c
+`c
     switch (day) {
         case 1:
         case 2:
@@ -525,26 +522,25 @@ Enter day number: 9  →  ❌ Invalid! Enter 1-7
             printf("🎉 Weekend!\n");
             break;
     }
-    ```
-    **Output:**
-    ```
-    Enter day: 3  →  💼 Weekday!
+    `
+**Output:**
+`     Enter day: 3  →  💼 Weekday!
     Enter day: 7  →  🎉 Weekend!
-    ```
-    Cases 1-5 all fall through to the same output.
+    `
+Cases 1-5 all fall through to the same output.
 
 **switch vs if-else — When to Use Which?**
 
-| Use `switch` when | Use `if-else` when |
-|-------------------|--------------------|
-| Checking one variable | Checking ranges (`marks >= 90`) |
-| Against fixed exact values | Multiple variables combined |
-| Menu choices, day numbers | Float/string comparisons |
-| Many exact values | Complex logical conditions |
+| Use `switch` when          | Use `if-else` when              |
+| -------------------------- | ------------------------------- |
+| Checking one variable      | Checking ranges (`marks >= 90`) |
+| Against fixed exact values | Multiple variables combined     |
+| Menu choices, day numbers  | Float/string comparisons        |
+| Many exact values          | Complex logical conditions      |
 
 !!! warning "Always use `break`!"
-    Forgetting `break` causes unintended fall-through:
-    ```c
+Forgetting `break` causes unintended fall-through:
+`c
     switch (x) {
         case 1:
             printf("One\n");
@@ -553,7 +549,7 @@ Enter day number: 9  →  ❌ Invalid! Enter 1-7
             printf("Two\n");  // Also runs when x=1!
             break;
     }
-    ```
+    `
 
 ---
 
@@ -579,9 +575,10 @@ variable = (condition) ? value_if_true : value_if_false;
 **Ternary Variants**
 
 === "Basic Usage"
-    ```c
-    int age    = 20;
-    char *status = (age >= 18) ? "Adult" : "Minor";
+
+````c
+int age = 20;
+char \*status = (age >= 18) ? "Adult" : "Minor";
 
     printf("Status: %s\n", status);
     ```
@@ -591,9 +588,9 @@ variable = (condition) ? value_if_true : value_if_false;
     ```
 
 === "Find Maximum"
-    ```c
-    int a = 15, b = 20;
-    int max = (a > b) ? a : b;
+```c
+int a = 15, b = 20;
+int max = (a > b) ? a : b;
 
     printf("Max: %d\n", max);
     ```
@@ -603,30 +600,28 @@ variable = (condition) ? value_if_true : value_if_false;
     ```
 
 === "Even or Odd"
-    ```c
+`c
     int num = 7;
     printf("%d is %s\n", num, (num % 2 == 0) ? "Even" : "Odd");
-    ```
-    **Output:**
-    ```
-    7 is Odd
-    ```
+    `
+**Output:**
+`     7 is Odd
+    `
 
 === "Inside printf"
-    ```c
+`c
     int score = 85;
     printf("Result: %s\n", (score >= 50) ? "PASS ✅" : "FAIL ❌");
-    ```
-    **Output:**
-    ```
-    Result: PASS ✅
-    ```
+    `
+**Output:**
+`     Result: PASS ✅
+    `
 
 !!! tip "When to use ternary?"
-    Use it for **simple, short** conditions only. If the logic is complex, use `if-else`:
-    ```c
-    // ✅ Good — simple and clear
-    int max = (a > b) ? a : b;
+Use it for **simple, short** conditions only. If the logic is complex, use `if-else`:
+```c
+// ✅ Good — simple and clear
+int max = (a > b) ? a : b;
 
     // ❌ Bad — too complex, hard to read
     int r = (a > b) ? (a > c ? a : c) : (b > c ? b : c);
@@ -709,9 +704,10 @@ int main() {
     printf("\nThank you for using our ATM! 👋\n");
     return 0;
 }
-```
+````
 
 **Output:**
+
 ```
 ╔══════════════════════════════╗
 ║         ATM MACHINE          ║
@@ -736,12 +732,14 @@ Thank you for using our ATM! 👋
 ## ⚠️ Common Mistakes
 
 ### 1. Using `=` instead of `==`
+
 ```c
 if (x = 5)   // ❌ Assigns 5 to x — always TRUE!
 if (x == 5)  // ✅ Compares x with 5
 ```
 
 ### 2. Missing curly braces `{}`
+
 ```c
 // ❌ Only first line is inside if!
 if (x > 0)
@@ -756,6 +754,7 @@ if (x > 0) {
 ```
 
 ### 3. Missing `break` in switch
+
 ```c
 // ❌ Falls through to case 2!
 switch (x) {
@@ -778,6 +777,7 @@ switch (x) {
 ```
 
 ### 4. Comparing floats with `==`
+
 ```c
 float f = 0.1 + 0.2;
 
@@ -786,6 +786,7 @@ if (f - 0.3 < 0.0001)     // ✅ Use a small tolerance instead
 ```
 
 ### 5. Semicolon after `if`
+
 ```c
 if (x > 0);               // ❌ Semicolon ends the if immediately!
 {
@@ -802,19 +803,19 @@ if (x > 0)                // ✅ No semicolon
 
 ## ✅ Quick Reference Summary
 
-| Statement | Use Case | Example |
-|-----------|----------|---------|
-| `if` | One condition | `if (age >= 18)` |
-| `if-else` | Two outcomes | `if (pass) ... else ...` |
-| `else-if` | Multiple ranges | Grade A/B/C/D/F |
-| Nested `if` | Conditions inside conditions | Login system |
-| `switch` | One variable, many fixed values | Menu, day names |
-| Ternary `?:` | Short one-line if-else | `max = a>b ? a : b` |
+| Statement    | Use Case                        | Example                  |
+| ------------ | ------------------------------- | ------------------------ |
+| `if`         | One condition                   | `if (age >= 18)`         |
+| `if-else`    | Two outcomes                    | `if (pass) ... else ...` |
+| `else-if`    | Multiple ranges                 | Grade A/B/C/D/F          |
+| Nested `if`  | Conditions inside conditions    | Login system             |
+| `switch`     | One variable, many fixed values | Menu, day names          |
+| Ternary `?:` | Short one-line if-else          | `max = a>b ? a : b`      |
 
 ---
 
 !!! success "You Can Now Control Your Program's Flow! 🎉"
-    You know how to make your C programs smart — they can now make decisions, handle multiple cases, and respond differently based on conditions and user input. Practice these well!
+You know how to make your C programs smart — they can now make decisions, handle multiple cases, and respond differently based on conditions and user input. Practice these well!
 
 !!! tip "Next Topic"
-    Now that you can make decisions, learn how to **repeat** things → **[Loops](Loops.md)**
+Now that you can make decisions, learn how to **repeat** things → **[Loops](Loops.md)**
